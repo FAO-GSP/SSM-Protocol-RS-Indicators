@@ -1,4 +1,4 @@
-# Supplementary indicators for the SSM assessment using remote sensing  
+# Supplementary remote rensing indicators 
 
 This document provides the scripts and a short user manual to derive the supplementary indicators for an SSM assessment through remote sensing. It is meant as a supplementary material to the User Manual of the SSM Protocol (reference here). 
 The following indicators mentioned in the User Manual of the SSM Protocol will be used:
