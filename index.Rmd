@@ -1,5 +1,6 @@
 ---
-title: 'Supplementary RS Indicators'
+title: 'Remote Sensing Indicators'
+subtitle: 'Supplementary Material to the User Manual of the Protocol for the Assessment of Soil Health and  Sustainable Soil Management  '
 author:
 site: bookdown::bookdown_site
 documentclass: book
