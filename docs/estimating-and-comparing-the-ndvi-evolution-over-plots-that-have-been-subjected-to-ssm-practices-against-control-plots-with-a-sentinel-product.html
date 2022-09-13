@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>2 Estimating and comparing the NDVI evolution over plots that have been subjected to SSM practices against control plots with a Sentinel product | Remote Sensing Indicators</title>
+  <meta name="description" content="2 Estimating and comparing the NDVI evolution over plots that have been subjected to SSM practices against control plots with a Sentinel product | Remote Sensing Indicators" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="2 Estimating and comparing the NDVI evolution over plots that have been subjected to SSM practices against control plots with a Sentinel product | Remote Sensing Indicators" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="2 Estimating and comparing the NDVI evolution over plots that have been subjected to SSM practices against control plots with a Sentinel product | Remote Sensing Indicators" />
+  
+  
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="ndvi-evolution-within-the-project-area-using-modis.html"/>
+<link rel="next" href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html"><i class="fa fa-check"></i><b>1</b> NDVI evolution within the project area using MODIS</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#step-1-delineate-the-area-of-interest-aoi-in-gee"><i class="fa fa-check"></i><b>1.1</b> Step 1 | Delineate the Area of Interest (AOI) in GEE:</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#option-1-drawing-a-geometry-directly-in-gee"><i class="fa fa-check"></i><b>1.1.1</b> Option 1: Drawing a geometry directly in GEE</a></li>
+<li class="chapter" data-level="1.1.2" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#option-2-uploading-a-shapefile-into-gee"><i class="fa fa-check"></i><b>1.1.2</b> Option 2: Uploading a shapefile into GEE</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#step-2-copy-paste-and-run-the-provided-scripts-into-gee"><i class="fa fa-check"></i><b>1.2</b> Step 2 | Copy, paste and run the provided scripts into GEE</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#script-1-ndvi-trend-over-a-larger-area-with-modis"><i class="fa fa-check"></i><b>1.2.1</b> <strong>Script 1: NDVI trend over a larger area with Modis</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#step-3-export-and-analyse-your-output"><i class="fa fa-check"></i><b>1.3</b> Step 3 | Export and analyse your output</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><i class="fa fa-check"></i><b>2</b> Estimating and comparing the NDVI evolution over plots that have been subjected to SSM practices against control plots with a Sentinel product</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-1-delineate-two-areas-for-comparison-in-gee"><i class="fa fa-check"></i><b>2.1</b> Step 1 | Delineate two areas for comparison in GEE</a></li>
+<li class="chapter" data-level="2.2" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-2-copy-paste-and-run-the-provided-scripts-into-gee-1"><i class="fa fa-check"></i><b>2.2</b> Step 2 | Copy, paste and run the provided scripts into GEE</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#script-2-ndvi-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>2.2.1</b> <strong>Script 2: NDVI trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-3-export-and-test-for-significant-differences"><i class="fa fa-check"></i><b>2.3</b> Step 3 | Export and test for significant differences</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#script-2.1-example-of-potential-data-visualization-with-the-output-csv-file-with-a-one-way-anova-in-r."><i class="fa fa-check"></i><b>2.3.1</b> <strong>Script 2.1 Example of potential data visualization with the output csv file with a one-way Anova in R.</strong></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html"><i class="fa fa-check"></i><b>3</b> Estimating vegetation cover ratios to compare the effects of SSM</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#script-3-vegetation-cover-ratio-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>3.0.1</b> <strong>Script 3: Vegetation cover ratio trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="assessing-ssm-through-bare-soil-index-bsi.html"><a href="assessing-ssm-through-bare-soil-index-bsi.html"><i class="fa fa-check"></i><b>4</b> Assessing SSM through Bare Soil Index (BSI)</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="assessing-ssm-through-bare-soil-index-bsi.html"><a href="assessing-ssm-through-bare-soil-index-bsi.html#script-4-bare-soil-index-trend-comparison-for-the-whole-area-using-modis"><i class="fa fa-check"></i><b>4.0.1</b> <strong>Script 4: Bare Soil Index trend comparison for the whole area using MODIS</strong></a></li>
+<li class="chapter" data-level="4.0.2" data-path="assessing-ssm-through-bare-soil-index-bsi.html"><a href="assessing-ssm-through-bare-soil-index-bsi.html#script-5-bare-soil-index-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>4.0.2</b> <strong>Script 5: Bare Soil Index trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><a href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><i class="fa fa-check"></i><b>5</b> Assessing SSM through the Normalized Difference Water Index (NDWI)</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><a href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html#script-6-ndwi-trend-comparison-for-the-whole-area-using-modis"><i class="fa fa-check"></i><b>5.0.1</b> <strong>Script 6: NDWI trend comparison for the whole area using MODIS</strong></a></li>
+<li class="chapter" data-level="5.0.2" data-path="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><a href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html#script-7-ndwi-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>5.0.2</b> <strong>Script 7: NDWI trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><i class="fa fa-check"></i><b>6</b> Presenting and explaining the GEE results to assess SSM</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html#example-project-area"><i class="fa fa-check"></i><b>6.1</b> Example Project Area</a></li>
+<li class="chapter" data-level="6.2" data-path="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html#interpreting-the-results"><i class="fa fa-check"></i><b>6.2</b> Interpreting the results</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Remote Sensing Indicators</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">2</span> Estimating and comparing the NDVI evolution over plots that have been subjected to SSM practices against control plots with a Sentinel product<a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The following section presents a step by step guide to derive Sentinel-2 based spectral images to quantify and compare changes in NDVI values linked to SSM for two plots (one with SSM practices, and one without). In this case a Sentinel product is suggested due to its finer resolution (10 m). The Sentinel-2 mission started in 2015, meaning that for this example images from 2015 to 2020 will be selected. In the provided example we will be comparing two paddocks with contrasting management from 2010, within a 40 hectares project:</p>
+<ul>
+<li>A grazing paddock (1 ha) with a degraded tropical pasture (Business as usual, BAU)</li>
+<li>A paddock (1 ha) with a silvopastoral management, combining improved grass species, shrubs like Leucaena and trees like Glicirida to provide forage during the dry season (Sustainable Soil Management, SSM)</li>
+</ul>
+<div id="step-1-delineate-two-areas-for-comparison-in-gee" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Step 1 | Delineate two areas for comparison in GEE<a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-1-delineate-two-areas-for-comparison-in-gee" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Draw two geometries directly into GEE using the Geometry Tools. Add a first geometry then click on + new Layer and draw a second one (Figure 11).
+Finally, change the geometry names to SSM and Control (Figure 12). Lines 20 and 21 of the provided script can be modified to change the names displayed in the output graph.</p>
+<div class="figure">
+<img src="images/fig11.png" alt="" />
+<p class="caption">Figure 11 Adding multiple layers.</p>
+</div>
+<div class="figure">
+<img src="images/fig12.png" alt="" />
+<p class="caption">Figure 12 Correct geometry names.</p>
+</div>
+</div>
+<div id="step-2-copy-paste-and-run-the-provided-scripts-into-gee-1" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Step 2 | Copy, paste and run the provided scripts into GEE<a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-2-copy-paste-and-run-the-provided-scripts-into-gee-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once the two geometries have been created in GEE and renamed to “SSM” and “Control”, the following script can be copied, pasted and runed into GEE without any modification. The script was designed to provide the following outputs for the AOI:</p>
+<ul>
+<li>Plot comparison of median NDVI values (two per month) over a specified time period that can be exported as a table and/or graph</li>
+<li>The selected NDVI images</li>
+<li>A chart comparing mean yearly NDVI values for the SSM and the control plot
+To execute the script, copy the provided script below (Script 2) in its entirety, paste it into the code editor and click on Run.</li>
+</ul>
+<div id="script-2-ndvi-trend-comparison-over-two-plots-with-sentinel" class="section level3 hasAnchor" number="2.2.1">
+<h3><span class="header-section-number">2.2.1</span> <strong>Script 2: NDVI trend comparison over two plots with Sentinel</strong><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#script-2-ndvi-trend-comparison-over-two-plots-with-sentinel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb2-1"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">//++++++++++++++++++++++++++++++++++++++++++++++// </span></span>
+<span id="cb2-2"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co">// Script 2: NDVI trend comparison over two plots</span></span>
+<span id="cb2-3"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">// with Sentinel</span></span>
+<span id="cb2-4"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">// SSM-Prtocol 08/03/21</span></span>
+<span id="cb2-5"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">// This script was created by the GSP-Secretariat</span></span>
+<span id="cb2-6"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">// Authors: Luciano E. Di Paolo, Guillermo E. Peralta, Isabel Luotto</span></span>
+<span id="cb2-7"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co">// Find out more about the Global Soil Partnership:</span></span>
+<span id="cb2-8"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="co">//</span></span>
+<span id="cb2-9"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="co">// http://www.fao.org/global-soil-partnership/en/ </span></span>
+<span id="cb2-10"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">//</span></span>
+<span id="cb2-11"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">//++++++++++++++++++++++++++++++++++++++++++++++//</span></span>
+<span id="cb2-12"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-13"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-14"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-15"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">// Make a list of Features. </span></span>
+<span id="cb2-16"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="co">// Draw the geometries that represent the plots to analyze (in this case SSM and Control).</span></span>
+<span id="cb2-17"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="co">// Remember to add a geometry to represent the &quot;optimal&quot; or &quot;reference&quot; area. </span></span>
+<span id="cb2-18"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-19"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="co">//Create a feature list out of the drawn geometries</span></span>
+<span id="cb2-20"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> featList <span class="op">=</span> [</span>
+<span id="cb2-21"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-21" aria-hidden="true" tabindex="-1"></a>  ee<span class="op">.</span><span class="fu">Feature</span>(SSM<span class="op">,</span> {<span class="dt">name</span><span class="op">:</span> <span class="st">&#39;SSM&#39;</span>})<span class="op">,</span></span>
+<span id="cb2-22"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-22" aria-hidden="true" tabindex="-1"></a>  ee<span class="op">.</span><span class="fu">Feature</span>(Control<span class="op">,</span> {<span class="dt">name</span><span class="op">:</span> <span class="st">&#39;Control&#39;</span>})</span>
+<span id="cb2-23"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-23" aria-hidden="true" tabindex="-1"></a>]<span class="op">;</span></span>
+<span id="cb2-24"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-25"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-25" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> featColl <span class="op">=</span> ee<span class="op">.</span><span class="fu">FeatureCollection</span>(featList)<span class="op">;</span></span>
+<span id="cb2-26"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(featColl)<span class="op">;</span></span>
+<span id="cb2-28"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-29"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-30"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-31"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="co">//SENTINEL 2</span></span>
+<span id="cb2-32"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="co">// This example uses the Sentinel-2 QA band to cloud mask</span></span>
+<span id="cb2-33"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="co">// the collection.  The Sentinel-2 cloud flags are less</span></span>
+<span id="cb2-34"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="co">// selective, so the collection is also pre-filtered by the</span></span>
+<span id="cb2-35"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-35" aria-hidden="true" tabindex="-1"></a><span class="co">// CLOUDY_PIXEL_PERCENTAGE flag, to use only relatively</span></span>
+<span id="cb2-36"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-36" aria-hidden="true" tabindex="-1"></a><span class="co">// cloud-free granule.</span></span>
+<span id="cb2-37"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="co">// Function to mask clouds using the Sentinel-2 QA band.</span></span>
+<span id="cb2-39"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">maskS2clouds</span>(image) {</span>
+<span id="cb2-40"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-40" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> qa <span class="op">=</span> image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;QA60&#39;</span>)</span>
+<span id="cb2-41"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-42"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-42" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Bits 10 and 11 are clouds and cirrus, respectively.</span></span>
+<span id="cb2-43"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-43" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> cloudBitMask <span class="op">=</span> <span class="dv">1</span> <span class="op">&lt;&lt;</span> <span class="dv">10</span><span class="op">;</span></span>
+<span id="cb2-44"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> cirrusBitMask <span class="op">=</span> <span class="dv">1</span> <span class="op">&lt;&lt;</span> <span class="dv">11</span><span class="op">;</span></span>
+<span id="cb2-45"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-46"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-46" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Both flags should be set to zero, indicating clear conditions.</span></span>
+<span id="cb2-47"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-47" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> mask <span class="op">=</span> qa<span class="op">.</span><span class="fu">bitwiseAnd</span>(cloudBitMask)<span class="op">.</span><span class="fu">eq</span>(<span class="dv">0</span>)<span class="op">.</span><span class="fu">and</span>(</span>
+<span id="cb2-48"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-48" aria-hidden="true" tabindex="-1"></a>             qa<span class="op">.</span><span class="fu">bitwiseAnd</span>(cirrusBitMask)<span class="op">.</span><span class="fu">eq</span>(<span class="dv">0</span>))</span>
+<span id="cb2-49"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-50"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-50" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Return the masked and scaled data, without the QA bands.</span></span>
+<span id="cb2-51"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-51" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> image<span class="op">.</span><span class="fu">updateMask</span>(mask)<span class="op">.</span><span class="fu">divide</span>(<span class="dv">10000</span>)</span>
+<span id="cb2-52"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-52" aria-hidden="true" tabindex="-1"></a>      <span class="op">.</span><span class="fu">select</span>(<span class="st">&quot;B.*&quot;</span>)</span>
+<span id="cb2-53"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-53" aria-hidden="true" tabindex="-1"></a>      <span class="op">.</span><span class="fu">copyProperties</span>(image<span class="op">,</span> [<span class="st">&quot;system:time_start&quot;</span>])</span>
+<span id="cb2-54"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-54" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-55"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-56"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-57"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-57" aria-hidden="true" tabindex="-1"></a><span class="co">// Select images with the cloud mask</span></span>
+<span id="cb2-58"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-58" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> filteredCollectionS2 <span class="op">=</span> ee<span class="op">.</span><span class="fu">ImageCollection</span>(<span class="st">&#39;COPERNICUS/S2&#39;</span>)</span>
+<span id="cb2-59"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-59" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filterBounds</span>(featColl)</span>
+<span id="cb2-60"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-60" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Select the years to perform the analysis</span></span>
+<span id="cb2-61"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-61" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">2015</span><span class="op">,</span><span class="dv">2020</span><span class="op">,</span><span class="st">&#39;year&#39;</span>))</span>
+<span id="cb2-62"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-62" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Select the months to perform the analysis</span></span>
+<span id="cb2-63"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-63" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">1</span><span class="op">,</span><span class="dv">12</span><span class="op">,</span><span class="st">&#39;month&#39;</span>))</span>
+<span id="cb2-64"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-64" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">lt</span>(<span class="st">&#39;CLOUDY_PIXEL_PERCENTAGE&#39;</span><span class="op">,</span> <span class="dv">20</span>))</span>
+<span id="cb2-65"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-65" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">map</span>(maskS2clouds)<span class="op">;</span></span>
+<span id="cb2-66"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-67"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-67" aria-hidden="true" tabindex="-1"></a><span class="co">// Define the NDVI function</span></span>
+<span id="cb2-68"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-68" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> addNDVI <span class="op">=</span> <span class="kw">function</span>(image) {</span>
+<span id="cb2-69"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-69" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> image<span class="op">.</span><span class="fu">addBands</span>(image<span class="op">.</span><span class="fu">normalizedDifference</span>([<span class="st">&#39;B8&#39;</span><span class="op">,</span> <span class="st">&#39;B4&#39;</span>]))<span class="op">;</span></span>
+<span id="cb2-70"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-70" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb2-71"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-72"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-72" aria-hidden="true" tabindex="-1"></a><span class="co">//Add indices to Image Collection</span></span>
+<span id="cb2-73"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-73" aria-hidden="true" tabindex="-1"></a><span class="co">// (this can be used as placeholder for other indices)</span></span>
+<span id="cb2-74"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-75"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-75" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ImColl <span class="op">=</span> filteredCollectionS2<span class="op">.</span><span class="fu">map</span>(addNDVI)<span class="op">;</span></span>
+<span id="cb2-76"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-77"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-77" aria-hidden="true" tabindex="-1"></a><span class="co">// Select the median of each image</span></span>
+<span id="cb2-78"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-78" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> median <span class="op">=</span> ImColl<span class="op">.</span><span class="fu">median</span>()<span class="op">;</span></span>
+<span id="cb2-79"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-80"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-80" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ImColl<span class="op">,</span><span class="st">&quot;Image Collection&quot;</span>)<span class="op">;</span></span>
+<span id="cb2-81"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-82"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-82" aria-hidden="true" tabindex="-1"></a><span class="co">// Show temporal median image of NDVI</span></span>
+<span id="cb2-83"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-83" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(featColl<span class="op">,</span>{<span class="st">&#39;bands&#39;</span><span class="op">:</span> [<span class="st">&#39;nd&#39;</span>]<span class="op">,</span><span class="dt">min</span><span class="op">:</span> <span class="fl">0.0</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="st">&quot;palette&quot;</span><span class="op">:</span><span class="st">&quot;FFFFFF, CE7E45, DF923D, F1B555, FCD163, 99B718, 74A901, 66A000, 529400, 3E8601, 207401, 056201, 004C00, 023B01, 012E01, 011D01, 011301&quot;</span>}<span class="op">,</span> <span class="st">&quot;NDVI temporal Median&quot;</span>)<span class="op">;</span></span>
+<span id="cb2-84"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-85"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a time series chart.</span></span>
+<span id="cb2-86"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-86" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> plotNDVI <span class="op">=</span> ui<span class="op">.</span><span class="at">Chart</span><span class="op">.</span><span class="at">image</span><span class="op">.</span><span class="fu">seriesByRegion</span>(ImColl<span class="op">,</span> featColl<span class="op">,</span>ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">mean</span>()<span class="op">,</span></span>
+<span id="cb2-87"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;nd&#39;</span><span class="op">,</span><span class="dv">20</span><span class="op">,</span><span class="st">&#39;system:time_start&#39;</span><span class="op">,</span><span class="st">&#39;name&#39;</span>)</span>
+<span id="cb2-88"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-88" aria-hidden="true" tabindex="-1"></a>              <span class="op">.</span><span class="fu">setChartType</span>(<span class="st">&#39;LineChart&#39;</span>)<span class="op">.</span><span class="fu">setOptions</span>({</span>
+<span id="cb2-89"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-89" aria-hidden="true" tabindex="-1"></a>                <span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Normalize Difference Vegetation Index &#39;</span><span class="op">,</span></span>
+<span id="cb2-90"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-90" aria-hidden="true" tabindex="-1"></a>                <span class="dt">hAxis</span><span class="op">:</span> {<span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Date&#39;</span>}<span class="op">,</span></span>
+<span id="cb2-91"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-91" aria-hidden="true" tabindex="-1"></a>                <span class="dt">vAxis</span><span class="op">:</span> {<span class="dt">title</span><span class="op">:</span> <span class="st">&#39;NDVI&#39;</span>}</span>
+<span id="cb2-92"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-92" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb2-93"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-94"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-94" aria-hidden="true" tabindex="-1"></a><span class="co">// Display.</span></span>
+<span id="cb2-95"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb2-95" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(plotNDVI)<span class="op">;</span></span></code></pre></div>
+</div>
+</div>
+<div id="step-3-export-and-test-for-significant-differences" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Step 3 | Export and test for significant differences<a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-3-export-and-test-for-significant-differences" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The graph and accompanying data can be viewed and exported from the console as shown in Step 3 of section 3.1.1. A short R script is provided as an example on how to test for the significance of the differences highlighted in the output GEE chart (Figure 13) (Script 2.1).</p>
+<div class="figure">
+<img src="images/fig13.png" alt="" />
+<p class="caption">Figure 13 Example GEE output of a chart showing the median NDVI trend of two plots.</p>
+</div>
+<div id="script-2.1-example-of-potential-data-visualization-with-the-output-csv-file-with-a-one-way-anova-in-r." class="section level3 hasAnchor" number="2.3.1">
+<h3><span class="header-section-number">2.3.1</span> <strong>Script 2.1 Example of potential data visualization with the output csv file with a one-way Anova in R.</strong><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#script-2.1-example-of-potential-data-visualization-with-the-output-csv-file-with-a-one-way-anova-in-r." class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Define a path to the file </span></span>
+<span id="cb3-2"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-2" aria-hidden="true" tabindex="-1"></a>wd <span class="ot">&lt;-</span> <span class="st">&quot;C:/Path/Example_data&quot;</span></span>
+<span id="cb3-3"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Use the path to define the working directory</span></span>
+<span id="cb3-5"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(wd)</span>
+<span id="cb3-6"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#load the data</span></span>
+<span id="cb3-8"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-8" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;ee-chart.csv&quot;</span>)</span>
+<span id="cb3-9"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">#Run a one-way ANOVA</span></span>
+<span id="cb3-11"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-11" aria-hidden="true" tabindex="-1"></a>anova <span class="ot">&lt;-</span> <span class="fu">aov</span>(SSM <span class="sc">~</span> Control, <span class="at">data=</span>data)</span>
+<span id="cb3-12"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="co">#Check if there&#39;s a significant effect</span></span>
+<span id="cb3-13"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(anova) </span>
+<span id="cb3-14"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-15"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-15" aria-hidden="true" tabindex="-1"></a><span class="co">#Extract p-value</span></span>
+<span id="cb3-16"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-16" aria-hidden="true" tabindex="-1"></a>pvalue <span class="ot">&lt;-</span><span class="fu">summary</span>(anova)[[<span class="dv">1</span>]][[<span class="st">&quot;Pr(&gt;F)&quot;</span>]]</span>
+<span id="cb3-17"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-17" aria-hidden="true" tabindex="-1"></a>pvalue <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(pvalue <span class="sc">&lt;</span> <span class="fl">0.01</span>, <span class="st">&quot;p &lt; 0.01&quot;</span>,</span>
+<span id="cb3-18"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-18" aria-hidden="true" tabindex="-1"></a>                 <span class="fu">ifelse</span>(pvalue <span class="sc">&gt;</span> <span class="fl">0.01</span> <span class="sc">&amp;</span> pvalue <span class="sc">&lt;</span> <span class="fl">0.05</span>, </span>
+<span id="cb3-19"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-19" aria-hidden="true" tabindex="-1"></a>                        <span class="st">&quot;p &lt; 0.05&quot;</span>, <span class="st">&quot;Not significant&quot;</span>))</span>
+<span id="cb3-20"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-21"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-21" aria-hidden="true" tabindex="-1"></a><span class="co">#Create a boxplot with the p-value as annotation</span></span>
+<span id="cb3-22"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-22" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(data<span class="sc">$</span>SSM , data<span class="sc">$</span>Control, <span class="at">frame =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb3-23"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-23" aria-hidden="true" tabindex="-1"></a>        <span class="at">names =</span> <span class="fu">c</span>(<span class="st">&quot;SSM&quot;</span>, <span class="st">&quot;Control&quot;</span>), <span class="at">ylab =</span> <span class="st">&quot;NDVI series (2015-2020)&quot;</span>)</span>
+<span id="cb3-24"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#cb3-24" aria-hidden="true" tabindex="-1"></a><span class="fu">mtext</span>(pvalue, <span class="at">side=</span><span class="dv">3</span>)</span></code></pre></div>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="ndvi-evolution-within-the-project-area-using-modis.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

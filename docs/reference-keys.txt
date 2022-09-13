@@ -1,4 +1,3 @@
-supplementary-remote-rensing-indicators
 ndvi-evolution-within-the-project-area-using-modis
 step-1-delineate-the-area-of-interest-aoi-in-gee
 option-1-drawing-a-geometry-directly-in-gee

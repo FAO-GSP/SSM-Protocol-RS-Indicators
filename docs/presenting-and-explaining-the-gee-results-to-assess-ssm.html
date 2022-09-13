@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Remote Sensing Indicators</title>
-  <meta name="description" content="Remote Sensing Indicators" />
+  <title>6 Presenting and explaining the GEE results to assess SSM | Remote Sensing Indicators</title>
+  <meta name="description" content="6 Presenting and explaining the GEE results to assess SSM | Remote Sensing Indicators" />
   <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Remote Sensing Indicators" />
+  <meta property="og:title" content="6 Presenting and explaining the GEE results to assess SSM | Remote Sensing Indicators" />
   <meta property="og:type" content="book" />
   
   
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Remote Sensing Indicators" />
+  <meta name="twitter:title" content="6 Presenting and explaining the GEE results to assess SSM | Remote Sensing Indicators" />
   
   
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"/>
 
-<link rel="next" href="ndvi-evolution-within-the-project-area-using-modis.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -193,29 +193,48 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Remote Sensing Indicators</h1>
-<h2 class="subtitle"><em>Supplementary Material to the User Manual of the Protocol for the Assessment of Soil Health and Sustainable Soil Management</em></h2>
-<p class="author"><em></em></p>
-</div>
-<div id="about" class="section level1 unnumbered hasAnchor">
-<h1>About<a href="index.html#about" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>This document provides the scripts and a short user manual to derive the supplementary indicators for an SSM assessment through remote sensing. It is meant as a supplementary material to the User Manual of the SSM Protocol (reference here).
-The following indicators mentioned in the User Manual of the SSM Protocol will be used:</p>
+<div id="presenting-and-explaining-the-gee-results-to-assess-ssm" class="section level1 hasAnchor" number="6">
+<h1><span class="header-section-number">6</span> Presenting and explaining the GEE results to assess SSM<a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html#presenting-and-explaining-the-gee-results-to-assess-ssm" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>The following section presents the results obtained from Google Earth Engine and provides an overview of potential conclusions that can be drawn in regards to the example project area. The main objective of this section is to provide an example analysis based on the suggested indices (NDVI, BSI and NDWI).</p>
+<div id="example-project-area" class="section level2 hasAnchor" number="6.1">
+<h2><span class="header-section-number">6.1</span> Example Project Area<a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html#example-project-area" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The example area is located in San Juan Nepomuceno, a town and municipality located in the Bolívar Department of northern Colombia. The project started in 2008 and was implemented on an area of 42.4 ha. The example area has undergone change in terms of land use (extensive pasture to a mosaic of silvopastoral areas and perennial crops). The overall greening of the entire project area (Figure 14) was assessed using MODIS based images, while a more detailed comparison between two plots (Figure 15) to assess the effect of silvopastoralism using Sentinel-2 images was performed.
+The effect of silvopastoralism was assessed by comparing two paddocks with contrasting management from 2010:</p>
 <ul>
-<li>NDVI</li>
-<li>BSI</li>
-<li>NWI</li>
+<li>A grazing paddock (1 ha) with a degraded tropical pasture (Business as usual, BAU)</li>
+<li>A paddock (1 ha) with a silvopastoral management, combining improved grass species, shrubs like Leucaena and trees like Glicirida to provide forage during the dry season (Sustainable Soil Management, SSM)</li>
 </ul>
-<p>Additionally, a short guide for the visualization and interpretation of the remotely sensed indicator is provided.</p>
+</div>
+<div id="interpreting-the-results" class="section level2 hasAnchor" number="6.2">
+<h2><span class="header-section-number">6.2</span> Interpreting the results<a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html#interpreting-the-results" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Once the generated dataset is downloaded (e.g. to a spreadsheet format, Step 3, Section 3.1), the data can be analysed in the preferred statistical or graph software (e.g. microsoft Excel, R, Graphpad prism, etc.) to assess The general trend of the project and compare the effects of management practices.
+In this example, the implementation of silvopastoral systems, improved grazing management, and water catchment surfaces among other practices, increased the overall productivity and vegetation cover of the whole farm. Since the implementation of the project in 2008, there has been a positive trend in NDVI annual averages (Figure 14), as reflected by the MODIS long-term historical products.</p>
+<div class="figure">
+<img src="images/fig14.png" alt="" />
+<p class="caption">Figure 14 Annual NDVI trend sinde the implementation of the project</p>
+</div>
+<p>This can be seen with greater detail , when we compare the results of NDVI, BSI and NDWI for the 2015-2021 series in the two contrasting managements mentioned above. The area with the silvopastoral system (SSM) showed greater NDVI average values (Figure 15a) than the area under extensive grazing (BAU), implying a greater vegetation cover and photosynthetic activity through the analysed period. On the other hand, by providing a greater vegetation cover through the year, SSM practices reduced soil exposure, as shown in Figure 15b. The BSI was greater under BAU practices, with average values closer to the threshold for bare soils/completely exposed soil surfaces (~ 0-0.08; Mzid et al., 2021). SSM practices may have also increased water infiltration and reduced surface runoff, improving water availability for vegetation growth. As shown in Figure 15c, a greater NDWI (i.e. lower water stress) in SSM practices may be reflecting this effect.</p>
+<p><img src="images/fig15.png" alt="Figure 15 Normalized Difference in Vegetation Index (NDVI; a); Bare Soil Index (BSI, b) and Normalized Difference WaterIndex (c) obtained from the 2015-2021 series (Sentinel Products), under Sustainable Soil Management (SSM) and Business As Usual (BAU) practices. Average values and P values paired t-tests are shown for each index." />
+A year to year analysis shows that since 2015, SSM practices increased vegetation cover (higher annual NDVI values, Figure 16a), reduced soil exposure (lower BSI values, Figure 16b) and reduced water stress (higher NDWI values, Figure 16c) compared to BAU practices. Year to year variations correspond to climatic effects, but overall, the introduction of SSM practices showed clear and distinguishable effects through the entire period.</p>
+<div class="figure">
+<img src="images/fig16.png" alt="" />
+<p class="caption">Figure 16 Annual evolution of the Normalized Difference in Vegetation Index (NDVI; a); Bare Soil Index (BSI, b) and Normalized Difference WaterIndex (c) in the 2015-2021 series (Sentinel Products), under Sustainable Soil Management (SSM) and Business As Usual (BAU) practices.</p>
+</div>
+<p>Another way of assessing this management change is by comparing results in years with higher availability of satellite images (2017-2020). During this period, areas under SSM showed greater vegetation cover through the year than BAU areas. This can be reflected by the probability of NDVI of exceeding a specific threshold (e.g. 0.3, indicating vegetated conditions; Fig. 16), in a particular year. In the case of SSM areas, 80-95% of the analysed images (183 in total) indicated vegetated conditions (NDVI &gt; 0.3), with soils being covered by actively growing vegetation through most of the year. On the contrary, BAU areas showed lower percentages, indicating a reduced vegetation cover through the year in all the analysed series.</p>
+<div class="figure">
+<img src="images/fig17.png" alt="" />
+<p class="caption">Figure 17 Annual evolution of the Normalized Difference in Vegetation Index (NDVI; a); Bare Soil Index (BSI, b) and Normalized Difference WaterIndex (c) in the 2015-2021 series (Sentinel Products), under Sustainable Soil Management (SSM) and Business As Usual (BAU) practices.</p>
+</div>
+
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="ndvi-evolution-within-the-project-area-using-modis.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

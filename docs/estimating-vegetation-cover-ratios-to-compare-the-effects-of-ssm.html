@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3 Estimating vegetation cover ratios to compare the effects of SSM | Remote Sensing Indicators</title>
+  <meta name="description" content="3 Estimating vegetation cover ratios to compare the effects of SSM | Remote Sensing Indicators" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3 Estimating vegetation cover ratios to compare the effects of SSM | Remote Sensing Indicators" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3 Estimating vegetation cover ratios to compare the effects of SSM | Remote Sensing Indicators" />
+  
+  
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"/>
+<link rel="next" href="assessing-ssm-through-bare-soil-index-bsi.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html"><i class="fa fa-check"></i><b>1</b> NDVI evolution within the project area using MODIS</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#step-1-delineate-the-area-of-interest-aoi-in-gee"><i class="fa fa-check"></i><b>1.1</b> Step 1 | Delineate the Area of Interest (AOI) in GEE:</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#option-1-drawing-a-geometry-directly-in-gee"><i class="fa fa-check"></i><b>1.1.1</b> Option 1: Drawing a geometry directly in GEE</a></li>
+<li class="chapter" data-level="1.1.2" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#option-2-uploading-a-shapefile-into-gee"><i class="fa fa-check"></i><b>1.1.2</b> Option 2: Uploading a shapefile into GEE</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#step-2-copy-paste-and-run-the-provided-scripts-into-gee"><i class="fa fa-check"></i><b>1.2</b> Step 2 | Copy, paste and run the provided scripts into GEE</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#script-1-ndvi-trend-over-a-larger-area-with-modis"><i class="fa fa-check"></i><b>1.2.1</b> <strong>Script 1: NDVI trend over a larger area with Modis</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#step-3-export-and-analyse-your-output"><i class="fa fa-check"></i><b>1.3</b> Step 3 | Export and analyse your output</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><i class="fa fa-check"></i><b>2</b> Estimating and comparing the NDVI evolution over plots that have been subjected to SSM practices against control plots with a Sentinel product</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-1-delineate-two-areas-for-comparison-in-gee"><i class="fa fa-check"></i><b>2.1</b> Step 1 | Delineate two areas for comparison in GEE</a></li>
+<li class="chapter" data-level="2.2" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-2-copy-paste-and-run-the-provided-scripts-into-gee-1"><i class="fa fa-check"></i><b>2.2</b> Step 2 | Copy, paste and run the provided scripts into GEE</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#script-2-ndvi-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>2.2.1</b> <strong>Script 2: NDVI trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-3-export-and-test-for-significant-differences"><i class="fa fa-check"></i><b>2.3</b> Step 3 | Export and test for significant differences</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#script-2.1-example-of-potential-data-visualization-with-the-output-csv-file-with-a-one-way-anova-in-r."><i class="fa fa-check"></i><b>2.3.1</b> <strong>Script 2.1 Example of potential data visualization with the output csv file with a one-way Anova in R.</strong></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html"><i class="fa fa-check"></i><b>3</b> Estimating vegetation cover ratios to compare the effects of SSM</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#script-3-vegetation-cover-ratio-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>3.0.1</b> <strong>Script 3: Vegetation cover ratio trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="assessing-ssm-through-bare-soil-index-bsi.html"><a href="assessing-ssm-through-bare-soil-index-bsi.html"><i class="fa fa-check"></i><b>4</b> Assessing SSM through Bare Soil Index (BSI)</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="assessing-ssm-through-bare-soil-index-bsi.html"><a href="assessing-ssm-through-bare-soil-index-bsi.html#script-4-bare-soil-index-trend-comparison-for-the-whole-area-using-modis"><i class="fa fa-check"></i><b>4.0.1</b> <strong>Script 4: Bare Soil Index trend comparison for the whole area using MODIS</strong></a></li>
+<li class="chapter" data-level="4.0.2" data-path="assessing-ssm-through-bare-soil-index-bsi.html"><a href="assessing-ssm-through-bare-soil-index-bsi.html#script-5-bare-soil-index-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>4.0.2</b> <strong>Script 5: Bare Soil Index trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><a href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><i class="fa fa-check"></i><b>5</b> Assessing SSM through the Normalized Difference Water Index (NDWI)</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><a href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html#script-6-ndwi-trend-comparison-for-the-whole-area-using-modis"><i class="fa fa-check"></i><b>5.0.1</b> <strong>Script 6: NDWI trend comparison for the whole area using MODIS</strong></a></li>
+<li class="chapter" data-level="5.0.2" data-path="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><a href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html#script-7-ndwi-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>5.0.2</b> <strong>Script 7: NDWI trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><i class="fa fa-check"></i><b>6</b> Presenting and explaining the GEE results to assess SSM</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html#example-project-area"><i class="fa fa-check"></i><b>6.1</b> Example Project Area</a></li>
+<li class="chapter" data-level="6.2" data-path="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html#interpreting-the-results"><i class="fa fa-check"></i><b>6.2</b> Interpreting the results</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Remote Sensing Indicators</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">3</span> Estimating vegetation cover ratios to compare the effects of SSM<a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Following the same steps explained in the section 3.1.1 and 3.1.2 an aggregated vegetation cover trend can be derived by estimating the mean yearly ratio of images over a certain threshold (e.g. NDVI &gt; 0.3) to compare the performance of two plots using a Sentinel product (Script 3). Aggregating the NDVI values represents a useful strategy to further highlight trends and evaluate differences linked to different management practices.
+With the following script a chart comparing the yearly vegetation cover ratio from 2017 to 2020 can be created.</p>
+<div id="script-3-vegetation-cover-ratio-trend-comparison-over-two-plots-with-sentinel" class="section level3 hasAnchor" number="3.0.1">
+<h3><span class="header-section-number">3.0.1</span> <strong>Script 3: Vegetation cover ratio trend comparison over two plots with Sentinel</strong><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#script-3-vegetation-cover-ratio-trend-comparison-over-two-plots-with-sentinel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb4-1"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-2"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">//++++++++++++++++++++++++++++++++++++++++++++++// </span></span>
+<span id="cb4-3"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">// Script 3: NDVI trend comparison over two plots</span></span>
+<span id="cb4-4"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">// with Sentinel (2017-2020)</span></span>
+<span id="cb4-5"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">// SSM-Prtocol 08/03/21</span></span>
+<span id="cb4-6"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">// This script was created by the GSP-Secretariat</span></span>
+<span id="cb4-7"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">// Authors: Luciano E Di Paolo, Guillermo E Peralta, Isabel Luotto</span></span>
+<span id="cb4-8"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">// Find out more about the Global Soil Partnership:</span></span>
+<span id="cb4-9"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">//</span></span>
+<span id="cb4-10"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">// http://www.fao.org/global-soil-partnership/en/ </span></span>
+<span id="cb4-11"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">//</span></span>
+<span id="cb4-12"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">//++++++++++++++++++++++++++++++++++++++++++++++//</span></span>
+<span id="cb4-13"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-15"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-16"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">// Make a list of Features. </span></span>
+<span id="cb4-17"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co">// Draw the geometries that represents the plots to analyze( in this case L01 and L02).</span></span>
+<span id="cb4-18"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co">// Remember to add a geometry to represent the &quot;optimal&quot; or &quot;reference&quot; area. </span></span>
+<span id="cb4-19"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co">//After drawing the geometries, change the names after the &quot;name&quot; variable. </span></span>
+<span id="cb4-20"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-21"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> featList <span class="op">=</span> [</span>
+<span id="cb4-22"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-22" aria-hidden="true" tabindex="-1"></a>  ee<span class="op">.</span><span class="fu">Feature</span>(Control<span class="op">,</span> {<span class="dt">name</span><span class="op">:</span> <span class="st">&#39;Control&#39;</span>})<span class="op">,</span></span>
+<span id="cb4-23"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-23" aria-hidden="true" tabindex="-1"></a>  ee<span class="op">.</span><span class="fu">Feature</span>(SSM<span class="op">,</span> {<span class="dt">name</span><span class="op">:</span> <span class="st">&#39;SSM&#39;</span>})</span>
+<span id="cb4-24"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-24" aria-hidden="true" tabindex="-1"></a>]<span class="op">;</span></span>
+<span id="cb4-25"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> featColl <span class="op">=</span> ee<span class="op">.</span><span class="fu">FeatureCollection</span>(featList)<span class="op">;</span></span>
+<span id="cb4-27"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(featColl)<span class="op">;</span></span>
+<span id="cb4-29"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-30"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-30" aria-hidden="true" tabindex="-1"></a><span class="co">//SENTINEL 2</span></span>
+<span id="cb4-31"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-32"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-33"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-33" aria-hidden="true" tabindex="-1"></a><span class="co">// This example uses the Sentinel-2 QA band to cloud mask</span></span>
+<span id="cb4-34"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-34" aria-hidden="true" tabindex="-1"></a><span class="co">// the collection.  The Sentinel-2 cloud flags are less</span></span>
+<span id="cb4-35"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="co">// selective, so the collection is also pre-filtered by the</span></span>
+<span id="cb4-36"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-36" aria-hidden="true" tabindex="-1"></a><span class="co">// CLOUDY_PIXEL_PERCENTAGE flag, to use only relatively</span></span>
+<span id="cb4-37"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-37" aria-hidden="true" tabindex="-1"></a><span class="co">// cloud-free granule.</span></span>
+<span id="cb4-38"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-39"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-39" aria-hidden="true" tabindex="-1"></a><span class="co">// Function to mask clouds using the Sentinel-2 QA band.</span></span>
+<span id="cb4-40"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">maskS2clouds</span>(image) {</span>
+<span id="cb4-41"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-41" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> qa <span class="op">=</span> image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;QA60&#39;</span>)</span>
+<span id="cb4-42"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-43"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-43" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Bits 10 and 11 are clouds and cirrus, respectively.</span></span>
+<span id="cb4-44"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> cloudBitMask <span class="op">=</span> <span class="dv">1</span> <span class="op">&lt;&lt;</span> <span class="dv">10</span><span class="op">;</span></span>
+<span id="cb4-45"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-45" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> cirrusBitMask <span class="op">=</span> <span class="dv">1</span> <span class="op">&lt;&lt;</span> <span class="dv">11</span><span class="op">;</span></span>
+<span id="cb4-46"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-47"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-47" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Both flags should be set to zero, indicating clear conditions.</span></span>
+<span id="cb4-48"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-48" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> mask <span class="op">=</span> qa<span class="op">.</span><span class="fu">bitwiseAnd</span>(cloudBitMask)<span class="op">.</span><span class="fu">eq</span>(<span class="dv">0</span>)<span class="op">.</span><span class="fu">and</span>(</span>
+<span id="cb4-49"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-49" aria-hidden="true" tabindex="-1"></a>             qa<span class="op">.</span><span class="fu">bitwiseAnd</span>(cirrusBitMask)<span class="op">.</span><span class="fu">eq</span>(<span class="dv">0</span>))</span>
+<span id="cb4-50"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-51"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-51" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Return the masked and scaled data, without the QA bands.</span></span>
+<span id="cb4-52"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-52" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> image<span class="op">.</span><span class="fu">updateMask</span>(mask)<span class="op">.</span><span class="fu">divide</span>(<span class="dv">10000</span>)</span>
+<span id="cb4-53"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-53" aria-hidden="true" tabindex="-1"></a>      <span class="op">.</span><span class="fu">select</span>(<span class="st">&quot;B.*&quot;</span>)</span>
+<span id="cb4-54"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-54" aria-hidden="true" tabindex="-1"></a>      <span class="op">.</span><span class="fu">copyProperties</span>(image<span class="op">,</span> [<span class="st">&quot;system:time_start&quot;</span>])</span>
+<span id="cb4-55"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-55" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-56"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-57"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-58"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-58" aria-hidden="true" tabindex="-1"></a><span class="co">// Select images from a collection with a silder.</span></span>
+<span id="cb4-59"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-60"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-60" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> filteredCollectionS2 <span class="op">=</span> ee<span class="op">.</span><span class="fu">ImageCollection</span>(<span class="st">&#39;COPERNICUS/S2&#39;</span>)</span>
+<span id="cb4-61"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-61" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filterBounds</span>(featColl)</span>
+<span id="cb4-62"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-62" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Select the years to perform the analysis</span></span>
+<span id="cb4-63"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-63" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">2015</span><span class="op">,</span><span class="dv">2020</span><span class="op">,</span><span class="st">&#39;year&#39;</span>))</span>
+<span id="cb4-64"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-64" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Select the months to perform the analysis</span></span>
+<span id="cb4-65"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-65" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">1</span><span class="op">,</span><span class="dv">12</span><span class="op">,</span><span class="st">&#39;month&#39;</span>))</span>
+<span id="cb4-66"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-66" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">lt</span>(<span class="st">&#39;CLOUDY_PIXEL_PERCENTAGE&#39;</span><span class="op">,</span> <span class="dv">20</span>))</span>
+<span id="cb4-67"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-67" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">map</span>(maskS2clouds)<span class="op">;</span></span>
+<span id="cb4-68"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-68" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb4-69"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-69" aria-hidden="true" tabindex="-1"></a><span class="co">// NDVI function</span></span>
+<span id="cb4-70"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-70" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> addNDVI <span class="op">=</span> <span class="kw">function</span>(image) {</span>
+<span id="cb4-71"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-71" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> image<span class="op">.</span><span class="fu">addBands</span>(image<span class="op">.</span><span class="fu">normalizedDifference</span>([<span class="st">&#39;B8&#39;</span><span class="op">,</span> <span class="st">&#39;B4&#39;</span>]))<span class="op">;</span></span>
+<span id="cb4-72"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-72" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb4-73"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-73" aria-hidden="true" tabindex="-1"></a><span class="co">// Add indexs to Image Collection</span></span>
+<span id="cb4-74"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-74" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-75"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-75" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ImColl <span class="op">=</span> filteredCollectionS2<span class="op">.</span><span class="fu">map</span>(addNDVI)<span class="op">;</span></span>
+<span id="cb4-76"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-76" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-77"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-77" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> median <span class="op">=</span> ImColl<span class="op">.</span><span class="fu">median</span>()<span class="op">;</span></span>
+<span id="cb4-78"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-78" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> Area_temp_median <span class="op">=</span> median<span class="op">.</span><span class="fu">clip</span>(featColl)<span class="op">;</span></span>
+<span id="cb4-79"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-80"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-80" aria-hidden="true" tabindex="-1"></a><span class="co">//var plots_temp_median = Area_temp_median.clip(featColl);</span></span>
+<span id="cb4-81"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-82"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-82" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ImColl<span class="op">,</span><span class="st">&quot;Image Collection&quot;</span>)<span class="op">;</span></span>
+<span id="cb4-83"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-84"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-84" aria-hidden="true" tabindex="-1"></a><span class="co">// Show temporal median image of NDVI</span></span>
+<span id="cb4-85"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-85" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(Area_temp_median<span class="op">,</span>{<span class="st">&#39;bands&#39;</span><span class="op">:</span> [<span class="st">&#39;nd&#39;</span>]<span class="op">,</span><span class="dt">min</span><span class="op">:</span> <span class="fl">0.0</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="st">&quot;palette&quot;</span><span class="op">:</span><span class="st">&quot;FFFFFF, CE7E45, DF923D, F1B555, FCD163, 99B718, 74A901, 66A000, 529400, 3E8601, 207401, 056201, 004C00, 023B01, 012E01, 011D01, 011301&quot;</span>}<span class="op">,</span> <span class="st">&quot;NDVI temporal Median&quot;</span>)<span class="op">;</span></span>
+<span id="cb4-86"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-87"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-88"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-88" aria-hidden="true" tabindex="-1"></a><span class="co">// Show the total number of images in the collection</span></span>
+<span id="cb4-89"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-89" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndColl<span class="op">=</span>ImColl<span class="op">.</span><span class="fu">select</span>([<span class="st">&#39;nd&#39;</span>])<span class="op">;</span></span>
+<span id="cb4-90"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-91"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-91" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&#39;Total number of NDVI images: &#39;</span><span class="op">,</span> ndColl<span class="op">.</span><span class="fu">size</span>())<span class="op">;</span></span>
+<span id="cb4-92"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-93"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-93" aria-hidden="true" tabindex="-1"></a><span class="co">// Define a mask using a threshold of 0.</span></span>
+<span id="cb4-94"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-95"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-95" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> mask_ndvi<span class="op">=</span> <span class="kw">function</span>(image) {</span>
+<span id="cb4-96"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-96" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> mask <span class="op">=</span> image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;nd&#39;</span>)<span class="op">.</span><span class="fu">gt</span>(<span class="fl">0.3</span>)<span class="op">;</span></span>
+<span id="cb4-97"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-97" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> image<span class="op">.</span><span class="fu">updateMask</span>(mask)<span class="op">;</span>}</span>
+<span id="cb4-98"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-98" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-99"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-99" aria-hidden="true" tabindex="-1"></a><span class="co">// NDVI PROPORTION 2017</span></span>
+<span id="cb4-100"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-100" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ImColl2017 <span class="op">=</span> ImColl<span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">2017</span><span class="op">,</span><span class="dv">2017</span><span class="op">,</span><span class="st">&#39;year&#39;</span>))<span class="op">;</span></span>
+<span id="cb4-101"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-102"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-102" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-103"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-103" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndColl2017<span class="op">=</span>ImColl2017<span class="op">.</span><span class="fu">select</span>([<span class="st">&#39;nd&#39;</span>])<span class="op">;</span></span>
+<span id="cb4-104"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-104" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-105"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-105" aria-hidden="true" tabindex="-1"></a><span class="co">//Apply the mask to the BSI Collection</span></span>
+<span id="cb4-106"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-107"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-107" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndCollmasked17<span class="op">=</span>ndColl2017<span class="op">.</span><span class="fu">map</span>(mask_ndvi)<span class="op">;</span> </span>
+<span id="cb4-108"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-109"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-109" aria-hidden="true" tabindex="-1"></a><span class="co">// Count the number of times that the threshold is surpased</span></span>
+<span id="cb4-110"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-110" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndCollmasked_nn17<span class="op">=</span>ndCollmasked17<span class="op">.</span><span class="fu">reduce</span>(ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">count</span>())<span class="op">;</span></span>
+<span id="cb4-111"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-112"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-112" aria-hidden="true" tabindex="-1"></a><span class="co">// Count the number of bsi images</span></span>
+<span id="cb4-113"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-113" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndColl_nn17<span class="op">=</span>ndColl2017<span class="op">.</span><span class="fu">reduce</span>(ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">count</span>())<span class="op">;</span></span>
+<span id="cb4-114"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-115"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-115" aria-hidden="true" tabindex="-1"></a><span class="co">// Calculate the proportion of times the bsi is greater than the threshold</span></span>
+<span id="cb4-116"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-116" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_2017<span class="op">=</span> ndCollmasked_nn17<span class="op">.</span><span class="fu">divide</span>(ndColl_nn17)<span class="op">;</span></span>
+<span id="cb4-117"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-117" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-118"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-118" aria-hidden="true" tabindex="-1"></a><span class="co">// Cut the BSI proportion by the area of interest</span></span>
+<span id="cb4-119"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-120"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-120" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_rec2017 <span class="op">=</span> prop_ndvi_2017<span class="op">.</span><span class="fu">clip</span>(featColl)<span class="op">;</span></span>
+<span id="cb4-121"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-122"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-122" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_rec2017 <span class="op">=</span> prop_ndvi_rec2017<span class="op">.</span><span class="fu">set</span>({</span>
+<span id="cb4-123"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-123" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span><span class="op">:</span> <span class="st">&quot;2017&quot;</span></span>
+<span id="cb4-124"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-124" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb4-125"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-125" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-126"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-126" aria-hidden="true" tabindex="-1"></a>prop_ndvi_rec2017 <span class="op">=</span> ee<span class="op">.</span><span class="fu">Image</span>(prop_ndvi_rec2017)</span>
+<span id="cb4-127"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-128"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-128" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(prop_ndvi_rec2017<span class="op">,</span>{<span class="st">&#39;bands&#39;</span><span class="op">:</span> [<span class="st">&#39;nd_count&#39;</span>]<span class="op">,</span><span class="dt">min</span><span class="op">:</span> <span class="fl">0.0</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">palette</span><span class="op">:</span>[<span class="st">&#39;011301&#39;</span><span class="op">,</span><span class="st">&#39;FFFFFF&#39;</span>]}<span class="op">,</span> <span class="st">&quot;NDVI prop 2017&quot;</span>)<span class="op">;</span></span>
+<span id="cb4-129"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-130"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-130" aria-hidden="true" tabindex="-1"></a><span class="co">// NDVI PROPORTION 2018</span></span>
+<span id="cb4-131"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-131" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ImColl2018 <span class="op">=</span> ImColl<span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">2018</span><span class="op">,</span><span class="dv">2018</span><span class="op">,</span><span class="st">&#39;year&#39;</span>))<span class="op">;</span></span>
+<span id="cb4-132"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-133"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-134"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-134" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndColl2018<span class="op">=</span>ImColl2018<span class="op">.</span><span class="fu">select</span>([<span class="st">&#39;nd&#39;</span>])<span class="op">;</span></span>
+<span id="cb4-135"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-136"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-136" aria-hidden="true" tabindex="-1"></a><span class="co">//Apply the mask to the BSI Collection</span></span>
+<span id="cb4-137"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-137" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-138"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-138" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndCollmasked18<span class="op">=</span>ndColl2018<span class="op">.</span><span class="fu">map</span>(mask_ndvi)<span class="op">;</span> </span>
+<span id="cb4-139"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-139" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-140"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-140" aria-hidden="true" tabindex="-1"></a><span class="co">// Count the number of times that the threshold is surpased</span></span>
+<span id="cb4-141"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-141" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndCollmasked_nn18<span class="op">=</span>ndCollmasked18<span class="op">.</span><span class="fu">reduce</span>(ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">count</span>())<span class="op">;</span></span>
+<span id="cb4-142"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-142" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-143"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-143" aria-hidden="true" tabindex="-1"></a><span class="co">// Count the number of bsi images</span></span>
+<span id="cb4-144"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-144" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndColl_nn18<span class="op">=</span>ndColl2018<span class="op">.</span><span class="fu">reduce</span>(ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">count</span>())<span class="op">;</span></span>
+<span id="cb4-145"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-146"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-146" aria-hidden="true" tabindex="-1"></a><span class="co">// Calculate the proportion of times the bsi is greater than the threshold</span></span>
+<span id="cb4-147"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-147" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_2018<span class="op">=</span> ndCollmasked_nn18<span class="op">.</span><span class="fu">divide</span>(ndColl_nn18)<span class="op">;</span></span>
+<span id="cb4-148"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-148" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-149"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-149" aria-hidden="true" tabindex="-1"></a><span class="co">// Cut the BSI proportion by the area of interest</span></span>
+<span id="cb4-150"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-151"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-151" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_rec2018 <span class="op">=</span> prop_ndvi_2018<span class="op">.</span><span class="fu">clip</span>(featColl)<span class="op">;</span></span>
+<span id="cb4-152"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-153"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-153" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(prop_ndvi_rec2018<span class="op">,</span>{<span class="st">&#39;bands&#39;</span><span class="op">:</span> [<span class="st">&#39;nd_count&#39;</span>]<span class="op">,</span><span class="dt">min</span><span class="op">:</span> <span class="fl">0.0</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">palette</span><span class="op">:</span>[<span class="st">&#39;011301&#39;</span><span class="op">,</span><span class="st">&#39;FFFFFF&#39;</span>]}<span class="op">,</span> <span class="st">&quot;NDVI prop 2018&quot;</span>)<span class="op">;</span></span>
+<span id="cb4-154"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-155"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-155" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_rec2018 <span class="op">=</span> prop_ndvi_rec2018<span class="op">.</span><span class="fu">set</span>({</span>
+<span id="cb4-156"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-156" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span><span class="op">:</span> <span class="st">&quot;2018&quot;</span></span>
+<span id="cb4-157"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-157" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb4-158"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-158" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-159"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-159" aria-hidden="true" tabindex="-1"></a>prop_ndvi_rec2018 <span class="op">=</span> ee<span class="op">.</span><span class="fu">Image</span>(prop_ndvi_rec2018)<span class="op">;</span></span>
+<span id="cb4-160"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-160" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-161"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-162"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-162" aria-hidden="true" tabindex="-1"></a><span class="co">// NDVI PROPORTION 2019</span></span>
+<span id="cb4-163"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-163" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ImColl2019 <span class="op">=</span> ImColl<span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">2019</span><span class="op">,</span><span class="dv">2019</span><span class="op">,</span><span class="st">&#39;year&#39;</span>))<span class="op">;</span></span>
+<span id="cb4-164"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-164" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-165"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-165" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndColl2019<span class="op">=</span>ImColl2019<span class="op">.</span><span class="fu">select</span>([<span class="st">&#39;nd&#39;</span>])<span class="op">;</span></span>
+<span id="cb4-166"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-166" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-167"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-167" aria-hidden="true" tabindex="-1"></a><span class="co">//Apply the mask to the BSI Collection</span></span>
+<span id="cb4-168"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-168" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-169"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-169" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndCollmasked19<span class="op">=</span>ndColl2019<span class="op">.</span><span class="fu">map</span>(mask_ndvi)<span class="op">;</span> </span>
+<span id="cb4-170"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-170" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-171"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-171" aria-hidden="true" tabindex="-1"></a><span class="co">// Count the number of times that the threshold is surpased</span></span>
+<span id="cb4-172"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-172" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndCollmasked_nn19<span class="op">=</span>ndCollmasked19<span class="op">.</span><span class="fu">reduce</span>(ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">count</span>())<span class="op">;</span></span>
+<span id="cb4-173"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-174"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-174" aria-hidden="true" tabindex="-1"></a><span class="co">// Count the number of bsi images</span></span>
+<span id="cb4-175"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-175" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndColl_nn19<span class="op">=</span>ndColl2019<span class="op">.</span><span class="fu">reduce</span>(ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">count</span>())<span class="op">;</span></span>
+<span id="cb4-176"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-176" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-177"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-177" aria-hidden="true" tabindex="-1"></a><span class="co">// Calculate the proportion of times the bsi is greater than the threshold</span></span>
+<span id="cb4-178"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-178" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_2019<span class="op">=</span> ndCollmasked_nn19<span class="op">.</span><span class="fu">divide</span>(ndColl_nn19)<span class="op">;</span></span>
+<span id="cb4-179"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-179" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-180"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-180" aria-hidden="true" tabindex="-1"></a><span class="co">// Cut the BSI proportion by the area of interest</span></span>
+<span id="cb4-181"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-182"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-182" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_rec2019 <span class="op">=</span> prop_ndvi_2019<span class="op">.</span><span class="fu">clip</span>(featColl)<span class="op">;</span></span>
+<span id="cb4-183"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-183" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-184"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-184" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(prop_ndvi_rec2019<span class="op">,</span>{<span class="st">&#39;bands&#39;</span><span class="op">:</span> [<span class="st">&#39;nd_count&#39;</span>]<span class="op">,</span><span class="dt">min</span><span class="op">:</span> <span class="fl">0.0</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">palette</span><span class="op">:</span>[<span class="st">&#39;011301&#39;</span><span class="op">,</span><span class="st">&#39;FFFFFF&#39;</span>]}<span class="op">,</span> <span class="st">&quot;NDVI prop 2019&quot;</span>)<span class="op">;</span></span>
+<span id="cb4-185"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-185" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-186"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-186" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_rec2019 <span class="op">=</span> prop_ndvi_rec2019<span class="op">.</span><span class="fu">set</span>({</span>
+<span id="cb4-187"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-187" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span><span class="op">:</span> <span class="st">&quot;2019&quot;</span></span>
+<span id="cb4-188"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-188" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb4-189"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-190"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-190" aria-hidden="true" tabindex="-1"></a>prop_ndvi_rec2019 <span class="op">=</span> ee<span class="op">.</span><span class="fu">Image</span>(prop_ndvi_rec2019)<span class="op">;</span></span>
+<span id="cb4-191"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-192"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-192" aria-hidden="true" tabindex="-1"></a><span class="co">// NDVI PROPORTION 2020</span></span>
+<span id="cb4-193"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-193" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ImColl2020 <span class="op">=</span> ImColl<span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">2020</span><span class="op">,</span><span class="dv">2020</span><span class="op">,</span><span class="st">&#39;year&#39;</span>))<span class="op">;</span></span>
+<span id="cb4-194"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-194" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-195"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-195" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndColl2020<span class="op">=</span>ImColl2020<span class="op">.</span><span class="fu">select</span>([<span class="st">&#39;nd&#39;</span>])<span class="op">;</span></span>
+<span id="cb4-196"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-196" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-197"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-197" aria-hidden="true" tabindex="-1"></a><span class="co">//Apply the mask to the BSI Collection</span></span>
+<span id="cb4-198"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-198" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-199"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-199" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndCollmasked20<span class="op">=</span>ndColl2020<span class="op">.</span><span class="fu">map</span>(mask_ndvi)<span class="op">;</span> </span>
+<span id="cb4-200"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-200" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-201"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-201" aria-hidden="true" tabindex="-1"></a><span class="co">// Count the number of times that the threshold is surpased</span></span>
+<span id="cb4-202"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-202" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndCollmasked_nn20<span class="op">=</span>ndCollmasked20<span class="op">.</span><span class="fu">reduce</span>(ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">count</span>())<span class="op">;</span></span>
+<span id="cb4-203"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-203" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-204"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-204" aria-hidden="true" tabindex="-1"></a><span class="co">// Count the number of bsi images</span></span>
+<span id="cb4-205"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-205" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ndColl_nn20<span class="op">=</span>ndColl2020<span class="op">.</span><span class="fu">reduce</span>(ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">count</span>())<span class="op">;</span></span>
+<span id="cb4-206"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-206" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-207"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-207" aria-hidden="true" tabindex="-1"></a><span class="co">// Calculate the proportion of times the bsi is greater than the threshold</span></span>
+<span id="cb4-208"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-208" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_2020<span class="op">=</span> ndCollmasked_nn20<span class="op">.</span><span class="fu">divide</span>(ndColl_nn20)<span class="op">;</span></span>
+<span id="cb4-209"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-209" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-210"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-210" aria-hidden="true" tabindex="-1"></a><span class="co">// Cut the BSI proportion by the area of interest</span></span>
+<span id="cb4-211"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-211" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-212"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-212" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_rec2020 <span class="op">=</span> prop_ndvi_2020<span class="op">.</span><span class="fu">clip</span>(featColl)<span class="op">;</span></span>
+<span id="cb4-213"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-213" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-214"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-214" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(prop_ndvi_rec2020<span class="op">,</span>{<span class="st">&#39;bands&#39;</span><span class="op">:</span> [<span class="st">&#39;nd_count&#39;</span>]<span class="op">,</span><span class="dt">min</span><span class="op">:</span> <span class="fl">0.0</span><span class="op">,</span> <span class="dt">max</span><span class="op">:</span> <span class="dv">1</span><span class="op">,</span> <span class="dt">palette</span><span class="op">:</span>[<span class="st">&#39;011301&#39;</span><span class="op">,</span><span class="st">&#39;FFFFFF&#39;</span>]}<span class="op">,</span> <span class="st">&quot;NDVI prop 2020&quot;</span>)<span class="op">;</span></span>
+<span id="cb4-215"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-215" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-216"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-216" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> prop_ndvi_rec2020 <span class="op">=</span> prop_ndvi_rec2020<span class="op">.</span><span class="fu">set</span>({</span>
+<span id="cb4-217"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-217" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span><span class="op">:</span> <span class="st">&quot;2020&quot;</span></span>
+<span id="cb4-218"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-218" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb4-219"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-219" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-220"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-220" aria-hidden="true" tabindex="-1"></a>prop_ndvi_rec2020 <span class="op">=</span> ee<span class="op">.</span><span class="fu">Image</span>(prop_ndvi_rec2020)<span class="op">;</span></span>
+<span id="cb4-221"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-221" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-222"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-222" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a new Image Collection</span></span>
+<span id="cb4-223"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-223" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-224"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-224" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> NDVIpropColl1720 <span class="op">=</span> ee<span class="op">.</span><span class="fu">ImageCollection</span>([prop_ndvi_rec2017<span class="op">,</span> prop_ndvi_rec2018<span class="op">,</span>prop_ndvi_rec2019<span class="op">,</span>prop_ndvi_rec2020])<span class="op">;</span></span>
+<span id="cb4-225"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-225" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&#39;NDVI prop collection: &#39;</span><span class="op">,</span> NDVIpropColl1720 )<span class="op">;</span></span>
+<span id="cb4-226"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-227"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-227" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a time series chart.</span></span>
+<span id="cb4-228"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-228" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> plotprop <span class="op">=</span> ui<span class="op">.</span><span class="at">Chart</span><span class="op">.</span><span class="at">image</span><span class="op">.</span><span class="fu">seriesByRegion</span>(NDVIpropColl1720<span class="op">,</span> featColl<span class="op">,</span>ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">mean</span>()<span class="op">,</span></span>
+<span id="cb4-229"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-229" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;nd_count&#39;</span><span class="op">,</span><span class="dv">20</span><span class="op">,</span><span class="st">&#39;year&#39;</span><span class="op">,</span><span class="st">&#39;name&#39;</span>)</span>
+<span id="cb4-230"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-230" aria-hidden="true" tabindex="-1"></a>              <span class="op">.</span><span class="fu">setChartType</span>(<span class="st">&#39;LineChart&#39;</span>)<span class="op">.</span><span class="fu">setOptions</span>({</span>
+<span id="cb4-231"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-231" aria-hidden="true" tabindex="-1"></a>                <span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Proportion of images with NDVI&gt;0.3&#39;</span><span class="op">,</span></span>
+<span id="cb4-232"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-232" aria-hidden="true" tabindex="-1"></a>                <span class="dt">hAxis</span><span class="op">:</span> {<span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Date&#39;</span>}<span class="op">,</span></span>
+<span id="cb4-233"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-233" aria-hidden="true" tabindex="-1"></a>                <span class="dt">vAxis</span><span class="op">:</span> {<span class="dt">title</span><span class="op">:</span> <span class="st">&#39;NDVI&gt;0.3/count(NDVI)&#39;</span>}</span>
+<span id="cb4-234"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-234" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb4-235"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-235" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-236"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-236" aria-hidden="true" tabindex="-1"></a><span class="co">// Display.</span></span>
+<span id="cb4-237"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#cb4-237" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(plotprop)<span class="op">;</span></span></code></pre></div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="assessing-ssm-through-bare-soil-index-bsi.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

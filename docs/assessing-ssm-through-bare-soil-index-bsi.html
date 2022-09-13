@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 Assessing SSM through Bare Soil Index (BSI) | Remote Sensing Indicators</title>
+  <meta name="description" content="4 Assessing SSM through Bare Soil Index (BSI) | Remote Sensing Indicators" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 Assessing SSM through Bare Soil Index (BSI) | Remote Sensing Indicators" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 Assessing SSM through Bare Soil Index (BSI) | Remote Sensing Indicators" />
+  
+  
+  
+
+<meta name="author" content="" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html"/>
+<link rel="next" href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About</a></li>
+<li class="chapter" data-level="1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html"><i class="fa fa-check"></i><b>1</b> NDVI evolution within the project area using MODIS</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#step-1-delineate-the-area-of-interest-aoi-in-gee"><i class="fa fa-check"></i><b>1.1</b> Step 1 | Delineate the Area of Interest (AOI) in GEE:</a>
+<ul>
+<li class="chapter" data-level="1.1.1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#option-1-drawing-a-geometry-directly-in-gee"><i class="fa fa-check"></i><b>1.1.1</b> Option 1: Drawing a geometry directly in GEE</a></li>
+<li class="chapter" data-level="1.1.2" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#option-2-uploading-a-shapefile-into-gee"><i class="fa fa-check"></i><b>1.1.2</b> Option 2: Uploading a shapefile into GEE</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#step-2-copy-paste-and-run-the-provided-scripts-into-gee"><i class="fa fa-check"></i><b>1.2</b> Step 2 | Copy, paste and run the provided scripts into GEE</a>
+<ul>
+<li class="chapter" data-level="1.2.1" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#script-1-ndvi-trend-over-a-larger-area-with-modis"><i class="fa fa-check"></i><b>1.2.1</b> <strong>Script 1: NDVI trend over a larger area with Modis</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="ndvi-evolution-within-the-project-area-using-modis.html"><a href="ndvi-evolution-within-the-project-area-using-modis.html#step-3-export-and-analyse-your-output"><i class="fa fa-check"></i><b>1.3</b> Step 3 | Export and analyse your output</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><i class="fa fa-check"></i><b>2</b> Estimating and comparing the NDVI evolution over plots that have been subjected to SSM practices against control plots with a Sentinel product</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-1-delineate-two-areas-for-comparison-in-gee"><i class="fa fa-check"></i><b>2.1</b> Step 1 | Delineate two areas for comparison in GEE</a></li>
+<li class="chapter" data-level="2.2" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-2-copy-paste-and-run-the-provided-scripts-into-gee-1"><i class="fa fa-check"></i><b>2.2</b> Step 2 | Copy, paste and run the provided scripts into GEE</a>
+<ul>
+<li class="chapter" data-level="2.2.1" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#script-2-ndvi-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>2.2.1</b> <strong>Script 2: NDVI trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#step-3-export-and-test-for-significant-differences"><i class="fa fa-check"></i><b>2.3</b> Step 3 | Export and test for significant differences</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html"><a href="estimating-and-comparing-the-ndvi-evolution-over-plots-that-have-been-subjected-to-ssm-practices-against-control-plots-with-a-sentinel-product.html#script-2.1-example-of-potential-data-visualization-with-the-output-csv-file-with-a-one-way-anova-in-r."><i class="fa fa-check"></i><b>2.3.1</b> <strong>Script 2.1 Example of potential data visualization with the output csv file with a one-way Anova in R.</strong></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html"><i class="fa fa-check"></i><b>3</b> Estimating vegetation cover ratios to compare the effects of SSM</a>
+<ul>
+<li class="chapter" data-level="3.0.1" data-path="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html"><a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html#script-3-vegetation-cover-ratio-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>3.0.1</b> <strong>Script 3: Vegetation cover ratio trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="assessing-ssm-through-bare-soil-index-bsi.html"><a href="assessing-ssm-through-bare-soil-index-bsi.html"><i class="fa fa-check"></i><b>4</b> Assessing SSM through Bare Soil Index (BSI)</a>
+<ul>
+<li class="chapter" data-level="4.0.1" data-path="assessing-ssm-through-bare-soil-index-bsi.html"><a href="assessing-ssm-through-bare-soil-index-bsi.html#script-4-bare-soil-index-trend-comparison-for-the-whole-area-using-modis"><i class="fa fa-check"></i><b>4.0.1</b> <strong>Script 4: Bare Soil Index trend comparison for the whole area using MODIS</strong></a></li>
+<li class="chapter" data-level="4.0.2" data-path="assessing-ssm-through-bare-soil-index-bsi.html"><a href="assessing-ssm-through-bare-soil-index-bsi.html#script-5-bare-soil-index-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>4.0.2</b> <strong>Script 5: Bare Soil Index trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><a href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><i class="fa fa-check"></i><b>5</b> Assessing SSM through the Normalized Difference Water Index (NDWI)</a>
+<ul>
+<li class="chapter" data-level="5.0.1" data-path="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><a href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html#script-6-ndwi-trend-comparison-for-the-whole-area-using-modis"><i class="fa fa-check"></i><b>5.0.1</b> <strong>Script 6: NDWI trend comparison for the whole area using MODIS</strong></a></li>
+<li class="chapter" data-level="5.0.2" data-path="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html"><a href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html#script-7-ndwi-trend-comparison-over-two-plots-with-sentinel"><i class="fa fa-check"></i><b>5.0.2</b> <strong>Script 7: NDWI trend comparison over two plots with Sentinel</strong></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><i class="fa fa-check"></i><b>6</b> Presenting and explaining the GEE results to assess SSM</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html#example-project-area"><i class="fa fa-check"></i><b>6.1</b> Example Project Area</a></li>
+<li class="chapter" data-level="6.2" data-path="presenting-and-explaining-the-gee-results-to-assess-ssm.html"><a href="presenting-and-explaining-the-gee-results-to-assess-ssm.html#interpreting-the-results"><i class="fa fa-check"></i><b>6.2</b> Interpreting the results</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Remote Sensing Indicators</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="assessing-ssm-through-bare-soil-index-bsi" class="section level1 hasAnchor" number="4">
+<h1><span class="header-section-number">4</span> Assessing SSM through Bare Soil Index (BSI)<a href="assessing-ssm-through-bare-soil-index-bsi.html#assessing-ssm-through-bare-soil-index-bsi" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Following the same steps presented in the previous sections the Bare Soil Index trend can be derived either for one area that encompasses the whole project (Script 4) using a MODIS product or to compare the performance a plot with SSM practices against a control plot (Script 6) using a Sentinel product.</p>
+<div id="script-4-bare-soil-index-trend-comparison-for-the-whole-area-using-modis" class="section level3 hasAnchor" number="4.0.1">
+<h3><span class="header-section-number">4.0.1</span> <strong>Script 4: Bare Soil Index trend comparison for the whole area using MODIS</strong><a href="assessing-ssm-through-bare-soil-index-bsi.html#script-4-bare-soil-index-trend-comparison-for-the-whole-area-using-modis" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb5-1"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">//++++++++++++++++++++++++++++++++++++++++++++++// </span></span>
+<span id="cb5-2"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="co">// Script 5: BSI trend over a larger area </span></span>
+<span id="cb5-3"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co">// with MODIS</span></span>
+<span id="cb5-4"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co">// SSM-Prtocol 08/03/21</span></span>
+<span id="cb5-5"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co">// This script was created by the GSP-Secretariat</span></span>
+<span id="cb5-6"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co">// Find out more about the Global Soil Partnership:</span></span>
+<span id="cb5-7"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">//</span></span>
+<span id="cb5-8"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-8" aria-hidden="true" tabindex="-1"></a><span class="co">// http://www.fao.org/global-soil-partnership/en/ </span></span>
+<span id="cb5-9"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="co">//</span></span>
+<span id="cb5-10"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co">//++++++++++++++++++++++++++++++++++++++++++++++//</span></span>
+<span id="cb5-11"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-12"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="co">// Area of Interest</span></span>
+<span id="cb5-13"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="bu">Map</span><span class="op">.</span><span class="fu">addLayer</span>(area<span class="op">,</span> {}<span class="op">,</span> <span class="st">&#39;Area of interest&#39;</span>)<span class="op">;</span></span>
+<span id="cb5-14"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-16" aria-hidden="true" tabindex="-1"></a><span class="co">// MODIS MOD09A1 product</span></span>
+<span id="cb5-17"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-18"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-18" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> dataset <span class="op">=</span> ee<span class="op">.</span><span class="fu">ImageCollection</span>(<span class="st">&#39;MODIS/006/MOD09A1&#39;</span>)</span>
+<span id="cb5-19"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-19" aria-hidden="true" tabindex="-1"></a><span class="op">.</span><span class="fu">filterBounds</span>(area)</span>
+<span id="cb5-20"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-20" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Select the years to perform the analysis</span></span>
+<span id="cb5-21"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-21" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">2015</span><span class="op">,</span><span class="dv">2020</span><span class="op">,</span><span class="st">&#39;year&#39;</span>))</span>
+<span id="cb5-22"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Select the months to perform the analysis</span></span>
+<span id="cb5-23"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-23" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">1</span><span class="op">,</span><span class="dv">12</span><span class="op">,</span><span class="st">&#39;month&#39;</span>))<span class="op">;</span></span>
+<span id="cb5-24"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-25"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-25" aria-hidden="true" tabindex="-1"></a><span class="co">//Bare Soil Index (BSI):</span></span>
+<span id="cb5-26"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="co">// (BSI) </span></span>
+<span id="cb5-27"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co">//Fórmula del BSI = ((Red+SWIR2) - (NIR+Blue)) / ((Red+SWIR2) + (NIR+Blue))</span></span>
+<span id="cb5-28"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="co">// BSI (Modis) = (B1 + B7) - (B2 + B3) / (B1 + B7) + (B2 + B3)</span></span>
+<span id="cb5-29"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> addBSI <span class="op">=</span> <span class="kw">function</span>(image){</span>
+<span id="cb5-30"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-30" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> image<span class="op">.</span><span class="fu">addBands</span> (image<span class="op">.</span><span class="fu">expression</span>(</span>
+<span id="cb5-31"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-31" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;bsi=((b1 + b7)-(b2+b3))/((b1 + b7)+(b2+b3))&#39;</span><span class="op">,</span> {</span>
+<span id="cb5-32"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-32" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;b7&#39;</span><span class="op">:</span> image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;sur_refl_b07&#39;</span>)<span class="op">,</span> <span class="co">// SWIR2</span></span>
+<span id="cb5-33"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-33" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;b1&#39;</span><span class="op">:</span> image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;sur_refl_b01&#39;</span>)<span class="op">,</span> <span class="co">// Red</span></span>
+<span id="cb5-34"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-34" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;b3&#39;</span><span class="op">:</span> image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;sur_refl_b03&#39;</span>)<span class="op">,</span> <span class="co">//BLUE</span></span>
+<span id="cb5-35"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-35" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;b2&#39;</span><span class="op">:</span>image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;sur_refl_b02&#39;</span>)}))<span class="op">;</span><span class="co">//NIR</span></span>
+<span id="cb5-36"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-36" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb5-37"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-37" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb5-38"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-39"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-40"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-40" aria-hidden="true" tabindex="-1"></a><span class="co">// Add indexs to Image Collection</span></span>
+<span id="cb5-41"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-41" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ImColl <span class="op">=</span> dataset<span class="op">.</span><span class="fu">map</span>(addBSI)<span class="op">;</span></span>
+<span id="cb5-42"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-43"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-43" aria-hidden="true" tabindex="-1"></a><span class="co">// Calculate the median of the time series of the indexes</span></span>
+<span id="cb5-44"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-44" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> median <span class="op">=</span> ImColl<span class="op">.</span><span class="fu">median</span>()<span class="op">;</span></span>
+<span id="cb5-45"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-45" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> Area_temp_median <span class="op">=</span> median<span class="op">.</span><span class="fu">clip</span>(area)<span class="op">;</span></span>
+<span id="cb5-46"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-47"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-47" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ImColl<span class="op">,</span><span class="st">&quot;Image Collection&quot;</span>)<span class="op">;</span></span>
+<span id="cb5-48"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-49"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-49" aria-hidden="true" tabindex="-1"></a><span class="co">// Show the total number of images in the collection</span></span>
+<span id="cb5-50"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-50" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> bsiColl<span class="op">=</span>ImColl<span class="op">.</span><span class="fu">select</span>([<span class="st">&#39;bsi&#39;</span>])<span class="op">;</span></span>
+<span id="cb5-51"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-52"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&#39;Total number of BSI images: &#39;</span><span class="op">,</span> bsiColl<span class="op">.</span><span class="fu">size</span>())<span class="op">;</span></span>
+<span id="cb5-53"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-54"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-55"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a time series chart.</span></span>
+<span id="cb5-56"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-56" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> plotBSI <span class="op">=</span> ui<span class="op">.</span><span class="at">Chart</span><span class="op">.</span><span class="at">image</span><span class="op">.</span><span class="fu">seriesByRegion</span>(ImColl<span class="op">,</span> area<span class="op">,</span>ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">mean</span>()<span class="op">,</span></span>
+<span id="cb5-57"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-57" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;bsi&#39;</span><span class="op">,</span><span class="dv">500</span><span class="op">,</span><span class="st">&#39;system:time_start&#39;</span><span class="op">,</span><span class="st">&#39;name&#39;</span>)</span>
+<span id="cb5-58"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-58" aria-hidden="true" tabindex="-1"></a>              <span class="op">.</span><span class="fu">setChartType</span>(<span class="st">&#39;LineChart&#39;</span>)<span class="op">.</span><span class="fu">setOptions</span>({</span>
+<span id="cb5-59"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-59" aria-hidden="true" tabindex="-1"></a>                <span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Bare Soil Index&#39;</span><span class="op">,</span></span>
+<span id="cb5-60"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-60" aria-hidden="true" tabindex="-1"></a>                <span class="dt">hAxis</span><span class="op">:</span> {<span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Date&#39;</span>}<span class="op">,</span></span>
+<span id="cb5-61"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-61" aria-hidden="true" tabindex="-1"></a>                <span class="dt">vAxis</span><span class="op">:</span> {<span class="dt">title</span><span class="op">:</span> <span class="st">&#39;BSI&#39;</span>}</span>
+<span id="cb5-62"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-62" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb5-63"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-64"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-64" aria-hidden="true" tabindex="-1"></a><span class="co">// Display.</span></span>
+<span id="cb5-65"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-65" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(plotBSI)<span class="op">;</span></span>
+<span id="cb5-66"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-66" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-67"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-67" aria-hidden="true" tabindex="-1"></a><span class="co">// Display.</span></span>
+<span id="cb5-68"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb5-68" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(plotBSI)<span class="op">;</span></span></code></pre></div>
+</div>
+<div id="script-5-bare-soil-index-trend-comparison-over-two-plots-with-sentinel" class="section level3 hasAnchor" number="4.0.2">
+<h3><span class="header-section-number">4.0.2</span> <strong>Script 5: Bare Soil Index trend comparison over two plots with Sentinel</strong><a href="assessing-ssm-through-bare-soil-index-bsi.html#script-5-bare-soil-index-trend-comparison-over-two-plots-with-sentinel" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<div class="sourceCode" id="cb6"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb6-1"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">//++++++++++++++++++++++++++++++++++++++++++++++// </span></span>
+<span id="cb6-2"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="co">// Script 5: BSI trend comparison over two plots</span></span>
+<span id="cb6-3"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co">// with Sentinel</span></span>
+<span id="cb6-4"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">// SSM-Prtocol 08/03/21</span></span>
+<span id="cb6-5"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">// This script was created by the GSP-Secretariat</span></span>
+<span id="cb6-6"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="co">// Find out more about the Global Soil Partnership:</span></span>
+<span id="cb6-7"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co">//</span></span>
+<span id="cb6-8"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">// http://www.fao.org/global-soil-partnership/en/ </span></span>
+<span id="cb6-9"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">//</span></span>
+<span id="cb6-10"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co">//++++++++++++++++++++++++++++++++++++++++++++++//</span></span>
+<span id="cb6-11"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-13"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-14"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="co">// Make a list of Features. </span></span>
+<span id="cb6-15"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-15" aria-hidden="true" tabindex="-1"></a><span class="co">// Draw the geometries that represents the plots to analyze (in this case SSM and Control).</span></span>
+<span id="cb6-16"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="co">// Remember to add a geometry to represent the &quot;optimal&quot; or &quot;reference&quot; area. </span></span>
+<span id="cb6-17"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co">//Create a feature list out of the drawn geometries</span></span>
+<span id="cb6-19"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> featList <span class="op">=</span> [</span>
+<span id="cb6-20"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-20" aria-hidden="true" tabindex="-1"></a>  ee<span class="op">.</span><span class="fu">Feature</span>(SSM<span class="op">,</span> {<span class="dt">name</span><span class="op">:</span> <span class="st">&#39;SSM&#39;</span>})<span class="op">,</span></span>
+<span id="cb6-21"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-21" aria-hidden="true" tabindex="-1"></a>  ee<span class="op">.</span><span class="fu">Feature</span>(Control<span class="op">,</span> {<span class="dt">name</span><span class="op">:</span> <span class="st">&#39;Control&#39;</span>})</span>
+<span id="cb6-22"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-22" aria-hidden="true" tabindex="-1"></a>]<span class="op">;</span></span>
+<span id="cb6-23"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-24"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-24" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> featColl <span class="op">=</span> ee<span class="op">.</span><span class="fu">FeatureCollection</span>(featList)<span class="op">;</span></span>
+<span id="cb6-25"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-26"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(featColl)<span class="op">;</span></span>
+<span id="cb6-27"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-28"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-29"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-29" aria-hidden="true" tabindex="-1"></a><span class="co">//SENTINEL 2</span></span>
+<span id="cb6-30"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-31"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-32"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="co">// This example uses the Sentinel-2 QA band to cloud mask</span></span>
+<span id="cb6-33"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-33" aria-hidden="true" tabindex="-1"></a><span class="co">// the collection.  The Sentinel-2 cloud flags are less</span></span>
+<span id="cb6-34"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-34" aria-hidden="true" tabindex="-1"></a><span class="co">// selective, so the collection is also pre-filtered by the</span></span>
+<span id="cb6-35"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="co">// CLOUDY_PIXEL_PERCENTAGE flag, to use only relatively</span></span>
+<span id="cb6-36"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-36" aria-hidden="true" tabindex="-1"></a><span class="co">// cloud-free granule.</span></span>
+<span id="cb6-37"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-38"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-38" aria-hidden="true" tabindex="-1"></a><span class="co">// Function to mask clouds using the Sentinel-2 QA band.</span></span>
+<span id="cb6-39"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-39" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">maskS2clouds</span>(image) {</span>
+<span id="cb6-40"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-40" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> qa <span class="op">=</span> image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;QA60&#39;</span>)</span>
+<span id="cb6-41"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-42"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-42" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Bits 10 and 11 are clouds and cirrus, respectively.</span></span>
+<span id="cb6-43"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-43" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> cloudBitMask <span class="op">=</span> <span class="dv">1</span> <span class="op">&lt;&lt;</span> <span class="dv">10</span><span class="op">;</span></span>
+<span id="cb6-44"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-44" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> cirrusBitMask <span class="op">=</span> <span class="dv">1</span> <span class="op">&lt;&lt;</span> <span class="dv">11</span><span class="op">;</span></span>
+<span id="cb6-45"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-46"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-46" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Both flags should be set to zero, indicating clear conditions.</span></span>
+<span id="cb6-47"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-47" aria-hidden="true" tabindex="-1"></a>  <span class="kw">var</span> mask <span class="op">=</span> qa<span class="op">.</span><span class="fu">bitwiseAnd</span>(cloudBitMask)<span class="op">.</span><span class="fu">eq</span>(<span class="dv">0</span>)<span class="op">.</span><span class="fu">and</span>(</span>
+<span id="cb6-48"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-48" aria-hidden="true" tabindex="-1"></a>             qa<span class="op">.</span><span class="fu">bitwiseAnd</span>(cirrusBitMask)<span class="op">.</span><span class="fu">eq</span>(<span class="dv">0</span>))</span>
+<span id="cb6-49"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-50"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-50" aria-hidden="true" tabindex="-1"></a>  <span class="co">// Return the masked and scaled data, without the QA bands.</span></span>
+<span id="cb6-51"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-51" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> image<span class="op">.</span><span class="fu">updateMask</span>(mask)<span class="op">.</span><span class="fu">divide</span>(<span class="dv">10000</span>)</span>
+<span id="cb6-52"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-52" aria-hidden="true" tabindex="-1"></a>      <span class="op">.</span><span class="fu">select</span>(<span class="st">&quot;B.*&quot;</span>)</span>
+<span id="cb6-53"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-53" aria-hidden="true" tabindex="-1"></a>      <span class="op">.</span><span class="fu">copyProperties</span>(image<span class="op">,</span> [<span class="st">&quot;system:time_start&quot;</span>])</span>
+<span id="cb6-54"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-54" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-55"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-56"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-57"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-57" aria-hidden="true" tabindex="-1"></a><span class="co">// Select images from a collection with a silder.</span></span>
+<span id="cb6-58"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-59"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-59" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> filteredCollectionS2 <span class="op">=</span> ee<span class="op">.</span><span class="fu">ImageCollection</span>(<span class="st">&#39;COPERNICUS/S2&#39;</span>)</span>
+<span id="cb6-60"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-60" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filterBounds</span>(featColl)</span>
+<span id="cb6-61"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-61" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Select the years to perform the analysis</span></span>
+<span id="cb6-62"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-62" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">2015</span><span class="op">,</span><span class="dv">2020</span><span class="op">,</span><span class="st">&#39;year&#39;</span>))</span>
+<span id="cb6-63"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-63" aria-hidden="true" tabindex="-1"></a>    <span class="co">//Select the months to perform the analysis</span></span>
+<span id="cb6-64"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-64" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">calendarRange</span>(<span class="dv">1</span><span class="op">,</span><span class="dv">12</span><span class="op">,</span><span class="st">&#39;month&#39;</span>))</span>
+<span id="cb6-65"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-65" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">filter</span>(ee<span class="op">.</span><span class="at">Filter</span><span class="op">.</span><span class="fu">lt</span>(<span class="st">&#39;CLOUDY_PIXEL_PERCENTAGE&#39;</span><span class="op">,</span> <span class="dv">20</span>))</span>
+<span id="cb6-66"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-66" aria-hidden="true" tabindex="-1"></a>    <span class="op">.</span><span class="fu">map</span>(maskS2clouds)<span class="op">;</span></span>
+<span id="cb6-67"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-68"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-68" aria-hidden="true" tabindex="-1"></a><span class="co">//Bare Soil Index (BSI):</span></span>
+<span id="cb6-69"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-69" aria-hidden="true" tabindex="-1"></a><span class="co">// (BSI) (GU, 2019).</span></span>
+<span id="cb6-70"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-70" aria-hidden="true" tabindex="-1"></a><span class="co">//Fórmula del BSI = ((Red+SWIR2) - (NIR+Blue)) / ((Red+SWIR2) + (NIR+Blue))</span></span>
+<span id="cb6-71"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-71" aria-hidden="true" tabindex="-1"></a><span class="co">// BSI (Sentinel 2) = (B12 + B4) - (B8 + B2) / (B12 + B4) + (B8 + B2)</span></span>
+<span id="cb6-72"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-72" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> addBSI <span class="op">=</span> <span class="kw">function</span>(image){</span>
+<span id="cb6-73"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-73" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> image<span class="op">.</span><span class="fu">addBands</span> (image<span class="op">.</span><span class="fu">expression</span>(</span>
+<span id="cb6-74"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-74" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;bsi=((b12 + b4)-(b8+b2))/((b12 + b4)+(b8+b2))&#39;</span><span class="op">,</span> {</span>
+<span id="cb6-75"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-75" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;b12&#39;</span><span class="op">:</span> image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;B12&#39;</span>)<span class="op">,</span></span>
+<span id="cb6-76"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-76" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;b4&#39;</span><span class="op">:</span> image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;B4&#39;</span>)<span class="op">,</span></span>
+<span id="cb6-77"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-77" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;b8&#39;</span><span class="op">:</span> image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;B8&#39;</span>)<span class="op">,</span></span>
+<span id="cb6-78"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-78" aria-hidden="true" tabindex="-1"></a>      <span class="st">&#39;b2&#39;</span><span class="op">:</span>image<span class="op">.</span><span class="fu">select</span>(<span class="st">&#39;B2&#39;</span>)}))<span class="op">;</span></span>
+<span id="cb6-79"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-79" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb6-80"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-80" aria-hidden="true" tabindex="-1"></a>}<span class="op">;</span></span>
+<span id="cb6-81"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-82"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-82" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-83"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-83" aria-hidden="true" tabindex="-1"></a><span class="co">// Add indexs to Image Collection</span></span>
+<span id="cb6-84"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-85"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-85" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> ImColl <span class="op">=</span> filteredCollectionS2<span class="op">.</span><span class="fu">map</span>(addBSI)<span class="op">;</span></span>
+<span id="cb6-86"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-87"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-87" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> median <span class="op">=</span> ImColl<span class="op">.</span><span class="fu">median</span>()<span class="op">;</span></span>
+<span id="cb6-88"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-88" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> Area_temp_median <span class="op">=</span> median<span class="op">.</span><span class="fu">clip</span>(featColl)<span class="op">;</span></span>
+<span id="cb6-89"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-90"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-90" aria-hidden="true" tabindex="-1"></a><span class="co">//var plots_temp_median = Area_temp_median.clip(featColl);</span></span>
+<span id="cb6-91"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-91" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-92"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-92" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(ImColl<span class="op">,</span><span class="st">&quot;Image Collection&quot;</span>)<span class="op">;</span></span>
+<span id="cb6-93"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-94"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-95"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-95" aria-hidden="true" tabindex="-1"></a><span class="co">// Show the total number of images in the collection</span></span>
+<span id="cb6-96"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-96" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> bsiColl<span class="op">=</span>ImColl<span class="op">.</span><span class="fu">select</span>([<span class="st">&#39;bsi&#39;</span>])<span class="op">;</span></span>
+<span id="cb6-97"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-97" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-98"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-98" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">&#39;Total number of BSI images: &#39;</span><span class="op">,</span> bsiColl<span class="op">.</span><span class="fu">size</span>())<span class="op">;</span></span>
+<span id="cb6-99"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-100"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-100" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-101"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-101" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> regionJSON <span class="op">=</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>(Area_temp_median<span class="op">.</span><span class="fu">getInfo</span>())<span class="op">;</span></span>
+<span id="cb6-102"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-102" aria-hidden="true" tabindex="-1"></a>Export<span class="op">.</span><span class="at">image</span><span class="op">.</span><span class="fu">toDrive</span>({</span>
+<span id="cb6-103"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-103" aria-hidden="true" tabindex="-1"></a>          <span class="dt">image</span><span class="op">:</span> Area_temp_median<span class="op">.</span><span class="fu">select</span>(<span class="st">&quot;bsi&quot;</span>)<span class="op">,</span></span>
+<span id="cb6-104"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-104" aria-hidden="true" tabindex="-1"></a>          <span class="dt">folder</span><span class="op">:</span> <span class="st">&quot;working_directory&quot;</span><span class="op">,</span></span>
+<span id="cb6-105"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-105" aria-hidden="true" tabindex="-1"></a>          <span class="dt">description</span><span class="op">:</span> <span class="st">&#39;BSI_median_S2_m01-m012_15-20&#39;</span><span class="op">,</span> </span>
+<span id="cb6-106"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-106" aria-hidden="true" tabindex="-1"></a>          <span class="dt">scale</span><span class="op">:</span> <span class="dv">20</span><span class="op">,</span></span>
+<span id="cb6-107"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-107" aria-hidden="true" tabindex="-1"></a>          <span class="dt">region</span><span class="op">:</span>featColl<span class="op">,</span></span>
+<span id="cb6-108"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-108" aria-hidden="true" tabindex="-1"></a>          <span class="dt">maxPixels</span><span class="op">:</span> <span class="fl">1e9</span></span>
+<span id="cb6-109"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-110"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-110" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb6-111"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-111" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-112"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-113"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-113" aria-hidden="true" tabindex="-1"></a><span class="co">// Create a time series chart.</span></span>
+<span id="cb6-114"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-114" aria-hidden="true" tabindex="-1"></a><span class="kw">var</span> plotBSI <span class="op">=</span> ui<span class="op">.</span><span class="at">Chart</span><span class="op">.</span><span class="at">image</span><span class="op">.</span><span class="fu">seriesByRegion</span>(ImColl<span class="op">,</span> featColl<span class="op">,</span>ee<span class="op">.</span><span class="at">Reducer</span><span class="op">.</span><span class="fu">mean</span>()<span class="op">,</span></span>
+<span id="cb6-115"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-115" aria-hidden="true" tabindex="-1"></a><span class="st">&#39;bsi&#39;</span><span class="op">,</span><span class="dv">20</span><span class="op">,</span><span class="st">&#39;system:time_start&#39;</span><span class="op">,</span><span class="st">&#39;name&#39;</span>)</span>
+<span id="cb6-116"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-116" aria-hidden="true" tabindex="-1"></a>              <span class="op">.</span><span class="fu">setChartType</span>(<span class="st">&#39;LineChart&#39;</span>)<span class="op">.</span><span class="fu">setOptions</span>({</span>
+<span id="cb6-117"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-117" aria-hidden="true" tabindex="-1"></a>                <span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Bare Soil Index&#39;</span><span class="op">,</span></span>
+<span id="cb6-118"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-118" aria-hidden="true" tabindex="-1"></a>                <span class="dt">hAxis</span><span class="op">:</span> {<span class="dt">title</span><span class="op">:</span> <span class="st">&#39;Date&#39;</span>}<span class="op">,</span></span>
+<span id="cb6-119"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-119" aria-hidden="true" tabindex="-1"></a>                <span class="dt">vAxis</span><span class="op">:</span> {<span class="dt">title</span><span class="op">:</span> <span class="st">&#39;BSI&#39;</span>}</span>
+<span id="cb6-120"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-120" aria-hidden="true" tabindex="-1"></a>})<span class="op">;</span></span>
+<span id="cb6-121"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-121" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-122"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-122" aria-hidden="true" tabindex="-1"></a><span class="co">// Display.</span></span>
+<span id="cb6-123"><a href="assessing-ssm-through-bare-soil-index-bsi.html#cb6-123" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(plotBSI)<span class="op">;</span></span></code></pre></div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="estimating-vegetation-cover-ratios-to-compare-the-effects-of-ssm.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="assessing-ssm-through-the-normalized-difference-water-index-ndwi.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

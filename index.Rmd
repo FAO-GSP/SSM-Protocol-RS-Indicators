@@ -9,10 +9,7 @@ output:
   #bookdown::pdf_book: default
 ---
 
-
-
-# Supplementary remote rensing indicators 
-
+# About{-}  
 This document provides the scripts and a short user manual to derive the supplementary indicators for an SSM assessment through remote sensing. It is meant as a supplementary material to the User Manual of the SSM Protocol (reference here). 
 The following indicators mentioned in the User Manual of the SSM Protocol will be used:
 
@@ -22,12 +19,12 @@ The following indicators mentioned in the User Manual of the SSM Protocol will b
 
 Additionally, a short guide for the visualization and interpretation of the remotely sensed indicator is provided. 
 
-## NDVI evolution within the project area using MODIS  
+# NDVI evolution within the project area using MODIS  
 The following section presents a step by step guide to derive MODIS based spectral images to quantify changes in NDVI values linked to SSM for an entire project area. The MODIS product MOD09A1 is suggested due to its extensive time coverage (2000 to present time). A script to be imputed into Google Earth Engine is provided.  
 
 The example area has undergone change in terms of land use (extensive pasture to a mosaic of silvopastoral areas and perennial crops).   
 
-### Step 1 | Delineate the Area of Interest (AOI) in GEE:  
+## Step 1 | Delineate the Area of Interest (AOI) in GEE:  
 
 ### Option 1: Drawing a geometry directly in GEE
 To locate your Area of Interest (AOI), the search bar over the three windows can be used to find a reference location (Figure 1).
@@ -63,7 +60,7 @@ The code editor will update automatically. In order to work directly with the pr
 
 ![Figure 8 Shapefile correctly uploaded to GEE and renamed to “area”.](images/fig8.png)
 
-### Step 2 | Copy, paste and run the provided scripts into GEE  
+## Step 2 | Copy, paste and run the provided scripts into GEE  
 Once a geometry has been created or imported into GEE and renamed to “area”, the following script can be copied, pasted and runed into GEE without any modification. The script was designed to provide the following outputs for the AOI:
 
 *   NDVI median values (two per month) over a specified time period that can be exported as a table and/or graph
@@ -154,19 +151,19 @@ print(plotNDVI);
 ```
 
 
-### Step 3 | Export and analyse your output  
+## Step 3 | Export and analyse your output  
 The resulting output can be viewed directly in the console tab in the third GEE window. To export the graph and data as an image and/or tabular data click on the arrow icon in the console (Figure 10). 
 
 ![Figure 10 Window to export the results from GEE.](images/fig10.png)
 
-## Estimating and comparing the NDVI evolution over plots that have been subjected to SSM practices against control plots with a Sentinel product  
+# Estimating and comparing the NDVI evolution over plots that have been subjected to SSM practices against control plots with a Sentinel product  
 
 The following section presents a step by step guide to derive Sentinel-2 based spectral images to quantify and compare changes in NDVI values linked to SSM for two plots (one with SSM practices, and one without). In this case a Sentinel product is suggested due to its finer resolution (10 m). The Sentinel-2 mission started in 2015, meaning that for this example images from 2015 to 2020 will be selected. In the provided example we will be comparing two paddocks with contrasting management from 2010,  within a 40 hectares project: 
 
 *   A grazing paddock (1 ha) with a degraded tropical pasture (Business as usual, BAU)
 *   A paddock (1 ha) with a silvopastoral management, combining improved grass species, shrubs like Leucaena and trees like Glicirida to provide forage during the dry season (Sustainable Soil Management, SSM)
 
-### Step 1 | Delineate two areas for comparison in GEE  
+## Step 1 | Delineate two areas for comparison in GEE  
 Draw two geometries directly into GEE using the Geometry Tools. Add a first geometry then click on + new Layer and draw a second one (Figure 11). 
 Finally, change the geometry names to SSM and Control (Figure 12). Lines 20 and 21 of the provided script can be modified to change the names displayed in the output graph. 
 
@@ -174,7 +171,7 @@ Finally, change the geometry names to SSM and Control (Figure 12). Lines 20 and 
 
 ![Figure 12 Correct geometry names.](images/fig12.png)
 
-### Step 2 | Copy, paste and run the provided scripts into GEE  
+## Step 2 | Copy, paste and run the provided scripts into GEE  
 Once the two geometries have been created in GEE and renamed to “SSM” and “Control”, the following script can be copied, pasted and runed into GEE without any modification. The script was designed to provide the following outputs for the AOI:
 
 *   Plot comparison of median NDVI  values (two per month) over a specified time period that can be exported as a table and/or graph
@@ -282,7 +279,7 @@ print(plotNDVI);
 
 ```
 
-### Step 3 | Export and test for significant differences  
+## Step 3 | Export and test for significant differences  
 The graph and accompanying data can be viewed and exported from the console as shown in Step 3 of section 3.1.1. A short R script is provided as an example on how to test for the significance of the differences highlighted in the output GEE chart (Figure 13) (Script 2.1).
 
 
@@ -320,7 +317,7 @@ mtext(pvalue, side=3)
 ```
 
 
-## Estimating vegetation cover ratios to compare the effects of SSM    
+# Estimating vegetation cover ratios to compare the effects of SSM    
 Following the same steps explained in the section 3.1.1 and 3.1.2 an aggregated vegetation cover trend can be derived by estimating the mean yearly ratio of images over a certain threshold (e.g. NDVI > 0.3) to compare the performance of two plots using a Sentinel product (Script 3).  Aggregating the NDVI values represents a useful strategy to further highlight trends and evaluate differences linked to different management practices.
 With the following script a chart comparing the yearly vegetation cover ratio from 2017 to 2020 can be created. 
 
@@ -569,7 +566,7 @@ print(plotprop);
 
 ```
 
-## Assessing SSM through Bare Soil Index (BSI)  
+# Assessing SSM through Bare Soil Index (BSI)  
 Following the same steps presented in the previous sections the Bare Soil Index trend can be derived either for one area that encompasses the whole project (Script 4) using a MODIS product or to compare the performance a plot with SSM practices against a control plot (Script 6) using a Sentinel product. 
 
 ### **Script 4:  Bare Soil Index  trend comparison for the whole area using MODIS**
@@ -776,7 +773,7 @@ print(plotBSI);
 
 ```
 
-## Assessing SSM through the Normalized Difference Water Index (NDWI)  
+# Assessing SSM through the Normalized Difference Water Index (NDWI)  
 
 Following the same steps presented in the previous sections, the NDWI trend can be derived either for one area that encompasses the whole project (Script 6) using a MODIS product or to compare the performance of a plot with SSM practices against a control plot (Script 7) using a Sentinel product. 
 
@@ -970,17 +967,17 @@ print(plotNDWI);
 
 ```
 
-## Presenting and explaining the GEE results to assess SSM  
+# Presenting and explaining the GEE results to assess SSM  
 The following section presents the results obtained from Google Earth Engine and provides an overview of potential conclusions that can be drawn in regards to the example project area. The main objective of this section is to provide an example analysis based on the suggested indices (NDVI, BSI and NDWI). 
 
-### Example Project Area  
+## Example Project Area  
 The example area is located in San Juan Nepomuceno, a town and municipality located in the Bolívar Department of northern Colombia. The project started in 2008 and was implemented on an area of 42.4 ha. The example area has undergone change in terms of land use (extensive pasture to a mosaic of silvopastoral areas and perennial crops). The overall greening of the entire project area (Figure 14) was assessed using MODIS based images, while a more detailed comparison between two plots (Figure 15) to assess the effect of silvopastoralism using Sentinel-2 images was performed. 
 The effect of silvopastoralism was assessed by comparing two paddocks with contrasting management from 2010:
 
 *   A grazing paddock (1 ha) with a degraded tropical pasture (Business as usual, BAU)
 *   A paddock (1 ha) with a silvopastoral management, combining improved grass species, shrubs like Leucaena and trees like Glicirida to provide forage during the dry season (Sustainable Soil Management, SSM)
 
-### Interpreting the results  
+## Interpreting the results  
 Once the generated dataset is downloaded (e.g. to a spreadsheet format, Step 3, Section 3.1), the data can be analysed in the preferred statistical or graph software  (e.g. microsoft Excel, R, Graphpad prism, etc.) to assess The general trend of the project and compare the effects of management practices.
 In this example, the implementation of silvopastoral  systems, improved grazing management, and water catchment surfaces among other practices,  increased the overall productivity and vegetation cover of the whole farm.   Since the implementation of the project in 2008, there has been a positive trend in NDVI annual averages (Figure 14), as reflected by the MODIS long-term historical products. 
 
