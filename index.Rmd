@@ -137,7 +137,7 @@ Export.image.toDrive({
 var plotNDVI = ui.Chart.image.seriesByRegion(ndvi, area,ee.Reducer.mean(),
 'ndvi',250,'system:time_start','name')
               .setChartType('LineChart').setOptions({
-                trendlines: {type: linear, 0: {color: 'CC0000'}, visibleInLegend: true},
+                trendlines: {type: 'linear', 0: {color: 'CC0000'}, visibleInLegend: true},
                 title: 'Mean Normalized Difference Vegetation Index ',
                 hAxis: {title: 'Date'},
                 vAxis: {title: 'NDVI'}
